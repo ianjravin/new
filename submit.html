@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+   <style>
+   /* Backgrounds colours */
+
+.green-bg,
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a,
+.tagcloud a:hover,
+#pager li a.active, #pager li a:hover,
+.menu ul > li > a:hover,
+.navbar-inverse .nav > li > a:focus,
+.navbar-inverse .nav > li > a:hover,
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus,
+.navbar-inverse .navbar-nav > li > a:after,
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.tabbable .nav nav-tabs li a,
+.bgcolor, #bgcolor, body .nav-tabs > li.active > a, body .nav-tabs > li.active > a:hover, body .nav-tabs > li.active > a:focus,
+.progress .bar, body .newsbv li .ncategory, .ncategory,
+.bar-green.progress-striped .bar, input[type=submit],
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,a.next:hover, a.prev:hover, .pb-category, .nav-collapse ul.nav li.megamenu > ul > li > ul > li a:hover, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus, .cart-outer {
+   background-color:#63e92a ;
+}
+
+.woocommerce nav.woocommerce-pagination ul li span.current, .single-product.woocommerce div.product form.cart .button.single_add_to_cart_button, .woocommerce-message a.button {
+ background-color:#63e92a !important;
+}
+
+/* Border colours */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus,
+.navbar-inverse .brand:hover,
+.navbar-inverse .nav > li > a:hover,
+.menu ul > li > a:hover,
+.project-update-info img, body .nav-tabs > li.active > a, body .nav-tabs > li.active > a:hover, body .nav-tabs > li.active > a:focus,
+.project-backer .cl-lg-3 img,
+.project-comment .cl-lg-1 img,
+.project-gallery .gallery-image a,
+.tabbable .nav nav-tabs li a, .nav-tabs .active a:active, .highlight-block .project-thumb-wrapper a,
+.project-gallery .gallery-image a:hover,
+#funding-form #field-amount, .fund-tabs-cont .nav-tabs > li > a:hover, .fund-tabs-cont .nav-tabs > li.active > a, footer h3,
+.widget_images a img:hover, .widget h3, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus, body.woocommerce nav.woocommerce-pagination ul li a,  body.woocommerce nav.woocommerce-pagination ul li span.current {
+ border-color: #63e92a !important ;
+ /* IE6-9 */
+
+}
+
+/* Color */
+.newsb-title a:hover, body a, a.login-top i, a.register-top i, a.account-top i, a.submit-top i, a.logout-top i, .category-container .project-stats li strong,
+.container ul.top-nav li.current-menu-item a, .comment_author_name, .footer_widget > ul > li > a:hover:after, .category-container #post-content .project_collected strong,
+.navbartop-wrapper .container ul.top-nav li:hover, .project-thumb-wrapper h5 a:hover, .category-menu li a:hover:after, .category-menu li.current a:after,
+.nav-tabs .active a:active, .fund-tabs-cont .nav-tabs > li > a strong, .category-menu li a:hover, .category-menu li.current a,
+body.user_project #wpcontent a, .author-info a, h5.bbcard_name a:hover, .footer_widget > ul > li > a:after,
+body.user_project .breadcrumbs a, .project-card p.plocation span, .blog-list h2 a:hover, .carousel_rating,
+.navbartop-wrapper .container ul.top-nav li a:hover, a.next:hover, a.prev:hover, #project-rewards-list span, #funding-form #field-amount, .icon span{
+   color: #63e92a ;
+}
+.button-green, .button-small, .button-medium, .nav-tabs .ui-state-active a, body .nav > li > a:hover, .nav-tabs li.active a, .nav-tabsin > .active > a, .nav-tabsin > .active > a:hover, .nav-tabsin > .active > a:focus{
+   background-color: #63e92a}
+.button-green:hover, .button-small:hover, .button-medium:hover, .navsin > li > a, body.woocommerce nav.woocommerce-pagination ul li a:hover{
+   background-color: #689c06 ;
+}
+
+.progress .bar, .highlight-block .project-thumb-wrapper a{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,82f3bd+0,7db9e8+100 */
+ background: #63e92a; /* Old browsers */
+ background: -moz-linear-gradient(left, #82f3be  0%, #63e92a 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(left, #82f3be 0%, #63e92a 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to right, #82f3be 0%, #63e92a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82f3be', endColorstr='#63e92a',GradientType=1 ); /* IE6-9 */
+
+}
+body.single-project .project-info .progress .bar{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,82f3bd+0,7db9e8+100 */
+ background: #63e92a; /* Old browsers */
+ background: -moz-linear-gradient(bottom, #82f3be  0%, #63e92a 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(bottom, #82f3be 0%, #63e92a 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to top, #82f3be 0%, #63e92a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82f3be', endColorstr='#63e92a',GradientType=1 ); /* IE6-9 */
+}
+</style>      <script type="text/javascript">
+       var templateDir = "https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress";
+   var ajaxurl = "https://skywarriorthemes.com/fundingpress/wp-admin/admin-ajax.php";
+       var premiumoption = "";
+       var formatdatuma = "MM dd, yy";
+   </script>
+
+<title>Submit project &#8211; FundingPress</title>
+ <script>function theChampLoadEvent(e){var t=window.onload;if(typeof window.onload!="function"){window.onload=e}else{window.onload=function(){t();e()}}}</script>
+   <script type="text/javascript">var theChampCloseIconPath = 'https://skywarriorthemes.com/fundingpress/wp-content/plugins/super-socializer/images/close.png';var heateorSsSDKBlockedMsg = `Your browser is blocking some features of this website. Please follow the instructions at <a href=\'http://support.heateor.com/browser-blocking-social-features/\' target=\'_blank\' style=\'color:#33a9d8\'>http://support.heateor.com/browser-blocking-social-features/</a> to unblock these.`</script>
+   <script> var theChampSiteUrl = 'https://skywarriorthemes.com/fundingpress', theChampVerified = 0, theChampEmailPopup = 0; </script>
+     <script> var theChampFBKey = '', theChampFBLang = 'en_US', theChampFbLikeMycred = 0, theChampSsga = 0, theChampCommentNotification = 0, theChampHeateorFcmRecentComments = 0, theChampFbIosLogin = 0; </script>
+           <script>var theChampFBCommentUrl = 'https://skywarriorthemes.com/fundingpress/submit-project-3/'; var theChampFBCommentColor = ''; var theChampFBCommentNumPosts = ''; var theChampFBCommentWidth = '100%'; var theChampFBCommentOrderby = ''; var theChampCommentingTabs = "wordpress,facebook,googleplus,disqus", theChampGpCommentsUrl = 'https://skywarriorthemes.com/fundingpress/submit-project-3/', theChampDisqusShortname = '', theChampScEnabledTabs = 'wordpress,fb', theChampScLabel = 'Leave a reply', theChampScTabLabels = {"wordpress":"Default Comments (0)","fb":"Facebook Comments (<fb:comments-count href=https:\/\/skywarriorthemes.com\/fundingpress\/submit-project-3\/><\/fb:comments-count>)","googleplus":"G+ Comments","disqus":"Disqus Comments"}, theChampGpCommentsWidth = 0, theChampCommentingId = 'respond'</script>
+         <style type="text/css">
+ .the_champ_horizontal_sharing .theChampSharing{
+         color: #fff;
+       border-width: 0px;
+   border-style: solid;
+   border-color: transparent;
+ }
+   .the_champ_horizontal_sharing .theChampTCBackground{
+   color:#666;
+ }
+   .the_champ_horizontal_sharing .theChampSharing:hover{
+       border-color: transparent;
+ }
+ .the_champ_vertical_sharing .theChampSharing{
+         color: #fff;
+       border-width: 0px;
+   border-style: solid;
+   border-color: transparent;
+ }
+   .the_champ_vertical_sharing .theChampTCBackground{
+   color:#666;
+ }
+   .the_champ_vertical_sharing .theChampSharing:hover{
+       border-color: transparent;
+ }
+ @media screen and (max-width:783px){.the_champ_vertical_sharing{display:none!important}}div.heateor_ss_mobile_footer{display:none;}@media screen and (max-width:783px){div.the_champ_bottom_sharing{width:100%!important;left:0!important;}div.the_champ_bottom_sharing li{width:10% !important;}div.the_champ_bottom_sharing .theChampSharing{width: 100% !important;}div.the_champ_bottom_sharing div.theChampTotalShareCount{font-size:1em!important;line-height:28px!important}div.the_champ_bottom_sharing div.theChampTotalShareText{font-size:.7em!important;line-height:0px!important}div.heateor_ss_mobile_footer{display:block;height:40px;}.the_champ_bottom_sharing{padding:0!important;display:block!important;width: auto!important;bottom:-2px!important;top: auto!important;}.the_champ_bottom_sharing .the_champ_square_count{line-height: inherit;}.the_champ_bottom_sharing .theChampSharingArrow{display:none;}.the_champ_bottom_sharing .theChampTCBackground{margin-right: 1.1em !important}}	</style>
+ <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="FundingPress &raquo; Feed" href="https://skywarriorthemes.com/fundingpress/feed/" />
+<link rel="alternate" type="application/rss+xml" title="FundingPress &raquo; Comments Feed" href="https://skywarriorthemes.com/fundingpress/comments/feed/" />
+   <script type="text/javascript">
+     window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/skywarriorthemes.com\/fundingpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.3"}};
+     !function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+   </script>
+   <style type="text/css">
+img.wp-smiley,
+img.emoji {
+ display: inline !important;
+ border: none !important;
+ box-shadow: none !important;
+ height: 1em !important;
+ width: 1em !important;
+ margin: 0 .07em !important;
+ vertical-align: -0.1em !important;
+ background: none !important;
+ padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='dashicons-css'  href='https://skywarriorthemes.com/fundingpress/wp-includes/css/dashicons.min.css?ver=4.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='https://skywarriorthemes.com/fundingpress/wp-includes/css/admin-bar.min.css?ver=4.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='layerslider-css'  href='https://skywarriorthemes.com/fundingpress/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css?ver=6.6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ls-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://skywarriorthemes.com/fundingpress/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wsl-widget-css'  href='https://skywarriorthemes.com/fundingpress/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=4.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-styleHcrop-css'  href='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/css/jquery.Jcrop.css?ver=20130401' type='text/css' media='all' />
+<link rel='stylesheet' id='mytheme-style-css'  href='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/style.css?ver=20150401' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://skywarriorthemes.com/fundingpress/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-min-css'  href='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/css/font-awesome.min.css?ver=20160930' type='text/css' media='all' />
+<link rel='stylesheet' id='ui-totop-css'  href='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/css/ui.totop.css?ver=20160930' type='text/css' media='all' />
+<link rel='stylesheet' id='the_champ_frontend_css-css'  href='https://skywarriorthemes.com/fundingpress/wp-content/plugins/super-socializer/css/front.css?ver=7.9.5' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LS_Meta = {"v":"6.6.0"};
+/* ]]> */
+</script>
+<script type='text/javascript' data-cfasync="false" src='https://skywarriorthemes.com/fundingpress/wp-content/plugins/LayerSlider/static/layerslider/js/greensock.js?ver=1.19.0'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' data-cfasync="false" src='https://skywarriorthemes.com/fundingpress/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.kreaturamedia.jquery.js?ver=6.6.0'></script>
+<script type='text/javascript' data-cfasync="false" src='https://skywarriorthemes.com/fundingpress/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.transitions.js?ver=6.6.0'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/jquery.carouFredSel-6.1.0.js?ver=4.9.3'></script>
+<meta name="generator" content="Powered by LayerSlider 6.6.0 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress." />
+<!-- LayerSlider updates and docs at: https://layerslider.kreaturamedia.com -->
+<link rel='https://api.w.org/' href='https://skywarriorthemes.com/fundingpress/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://skywarriorthemes.com/fundingpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://skywarriorthemes.com/fundingpress/wp-includes/wlwmanifest.xml" />
+<link rel="canonical" href="https://skywarriorthemes.com/fundingpress/submit-project-3/" />
+<link rel='shortlink' href='https://skywarriorthemes.com/fundingpress/?p=4401' />
+<link rel="alternate" type="application/json+oembed" href="https://skywarriorthemes.com/fundingpress/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fskywarriorthemes.com%2Ffundingpress%2Fsubmit-project-3%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://skywarriorthemes.com/fundingpress/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fskywarriorthemes.com%2Ffundingpress%2Fsubmit-project-3%2F&#038;format=xml" />
+<!--[if IE 9]> <script>var _gambitParallaxIE9 = true;</script> <![endif]-->    <link rel="stylesheet" href="https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/widgets/latest_twitter/latest_twitter_widget.css" />
+       <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+   <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://skywarriorthemes.com/fundingpress/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+ html { margin-top: 32px !important; }
+ * html body { margin-top: 32px !important; }
+ @media screen and ( max-width: 782px ) {
+   html { margin-top: 46px !important; }
+   * html body { margin-top: 46px !important; }
+ }
+</style>
+<link rel="icon" href="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2017/11/cropped-logo-big-vector-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2017/11/cropped-logo-big-vector-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2017/11/cropped-logo-big-vector-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2017/11/cropped-logo-big-vector-270x270.jpg" />
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+</head>
+<body class="page-template page-template-tmp-submit-project page-template-tmp-submit-project-php page page-id-4401 logged-in admin-bar no-customize-support wpb-js-composer js-comp-ver-5.3 vc_responsive">
+<div class="main_wrapper">
+
+<!-- color styles -->
+<link rel="stylesheet" href="https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/colorstyles/picker.css">
+<script type="text/javascript" src="https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/colorstyles/demo.js"></script>
+<script type="text/html" id="css-color">
+.green-bg,
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a,
+.tagcloud a:hover,
+#pager li a.active, #pager li a:hover,
+.menu ul > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:after,
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.tabbable .nav nav-tabs li a,
+.bgcolor, #bgcolor, body .nav-tabs > li.active > a, body .nav-tabs > li.active > a:hover, body .nav-tabs > li.active > a:focus,  body .newsbv li .ncategory, .ncategory, input[type=submit],
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,a.next:hover, a.prev:hover, .pb-category, .nav-collapse ul.nav li.megamenu > ul > li > ul > li a:hover, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus{
+   background-color:%color% ;
+}
+/* Border colours */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus,
+.navbar-inverse .brand:hover,
+.navbar-inverse .nav > li > a:hover,
+.menu ul > li > a:hover,
+.project-update-info img, body .nav-tabs > li.active > a, body .nav-tabs > li.active > a:hover, body .nav-tabs > li.active > a:focus,
+.project-backer .cl-lg-3 img,
+.project-comment .cl-lg-1 img, .highlight-block .project-thumb-wrapper a,
+.project-gallery .gallery-image a,
+.tabbable .nav nav-tabs li a, .nav-tabs .active a:active,
+.project-gallery .gallery-image a:hover,
+#funding-form #field-amount, .fund-tabs-cont .nav-tabs > li > a:hover, .fund-tabs-cont .nav-tabs > li.active > a, footer h3,
+.widget_images a img:hover, .widget h3, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+ border-color: %color% !important ;
+ /* IE6-9 */
+}
+/* Color */
+.iconcolor, .newsb-title a:hover, body a, a.login-top i, a.register-top i, a.account-top i, a.submit-top i, a.logout-top i, .category-container .project-stats li strong,
+.container ul.top-nav li.current-menu-item a, .comment_author_name, .footer_widget > ul > li > a:hover:after, .category-container #post-content .project_collected strong,
+.navbartop-wrapper .container ul.top-nav li:hover, .project-thumb-wrapper h5 a:hover, #category-menu li a:hover:after, #category-menu li.current a:after,
+.nav-tabs .active a:active, .fund-tabs-cont .nav-tabs > li > a strong, #category-menu li a:hover, #category-menu li.current a,
+body.user_project #wpcontent a, .author-info a, h5.bbcard_name a:hover, .footer_widget > ul > li > a:after,
+body.user_project .breadcrumbs a, .project-card p.plocation span, .blog-list h2 a:hover, .carousel_rating,
+.navbartop-wrapper .container ul.top-nav li a:hover, a.next:hover, a.prev:hover, #project-rewards-list span, #funding-form #field-amount, .icon span{
+   color: %color% ;
+}
+.button-green, .button-small, .button-medium, .nav-tabs .ui-state-active a, body .nav > li > a:hover, .nav-tabs li.active a, .nav-tabsin > .active > a, .nav-tabsin > .active > a:hover, .nav-tabsin > .active > a:focus{
+   background-color: %color%;
+}
+.button-green:hover, .button-small:hover, .button-medium:hover, .navsin > li > a{
+   background-color: %bottomgrad% ;
+}
+.progress .bar{
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,82f3bd+0,7db9e8+100 */
+   background: %topgrad%; /* Old browsers */
+   background: -moz-linear-gradient(left, %bottomgrad%  0%, %color% 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(left, %bottomgrad% 0%, %color% 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right, %bottomgrad% 0%, %color% 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='%bottomgrad%', endColorstr='%color%',GradientType=1 ); /* IE6-9 */
+}
+body.single-project .project-info .progress .bar{
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,82f3bd+0,7db9e8+100 */
+   background: %topgrad%; /* Old browsers */
+   background: -moz-linear-gradient(bottom, %bottomgrad%  0%, %color% 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(bottom, %bottomgrad% 0%, %color% 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to top, %bottomgrad% 0%, %color% 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='%bottomgrad%', endColorstr='%color%',GradientType=1 ); /* IE6-9 */
+}
+</script>
+<script type="text/html" id="css-bck">
+body{
+   background-image: url(%background%);
+}
+</script>
+<script type="text/html" id="css-pat">
+body{
+   background-image: url(%pattern%);
+   background-repeat:repeat;
+}
+</script>
+<section class="sw-style" data-cookie-path="/skywarrior/">
+   <div class="toggle"><a class="fa fa-tint"></a></div>
+   <div class="selector cf">
+       <div class="style-heading">Style Switcher</div>
+<!--
+       <div class="sw">
+           <div class="heading">Choose between full width or boxed version of the theme!</div>
+           <select class="layout-style">
+                  <option value="boxed">Boxed</option>
+                   <option value="">Full width</option>
+           </select>
+       </div>
+-->
+       <div class="sw">
+           <div class="heading">Play With Colors</div>
+           <div class="sample-colors">
+               <a href="#" class="sample-color blue active"></a>
+               <a href="#" class="sample-color green"></a>
+               <a href="#" class="sample-color yellow"></a>
+               <a href="#" class="sample-color orange"></a>
+               <a href="#" class="sample-color red"></a>
+           </div>
+       </div>
+       <div class="sw">
+        <div class="heading"> These are just some examples. You can choose any colors you want!</div>
+       </div>
+   </div>
+</section>
+<!-- color styles -->
+<header>
+   <div class="navbartop-wrapper" >
+       <div class="container">
+       <div class="search-wrapper">
+           <ul class="social-media">
+               <li><a target="_blank" class="facebook"href="#">facebook</a></li>                <li><a target="_blank" class="twitter" href="#">twitter</a></li>                                 <li><a target="_blank" class="google" href="#">google</a></li>                                <li><a target="_blank" class="skype" href="skype:#?add">skype</a></li>            </ul>
+       </div>
+       <div class="top-right">
+                          <a href="https://skywarriorthemes.com/fundingpress/wp-login.php?action=logout&#038;redirect_to=https%3A%2F%2Fskywarriorthemes.com%2Ffundingpress&#038;_wpnonce=498508bbff" class="logout-top "><i class="fa fa-sign-out" aria-hidden="true"></i> Log out</a>
+                               <a href="https://skywarriorthemes.com/fundingpress/submit-project-3/" class="submit-top"><i class="fa fa-fire" aria-hidden="true"></i> Submit a project</a>
+
+
+
+               <a href="https://skywarriorthemes.com/fundingpress/my-account-3/" class="account-top "><i class="fa fa-user" aria-hidden="true"></i> My account</a>
+                      <form method="get" id="searchform" action="https://skywarriorthemes.com/fundingpress/">
+   <input type="text" class="field" name="s" id="s" placeholder="Search" />
+   <input type="hidden" name="post_type" value="project" />
+</form>
+
+       </div>
+</div><!-- top right -->
+</div><!-- Container -->
+   <!-- NAVBAR
+   ================================================== -->
+<div class="navbar-wrapper navtransparent">
+     <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+     <div class="container">
+       <div class="logo-wrapper">
+                             <a href="https://skywarriorthemes.com/fundingpress"> <img src="https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/img/logo.png" alt="logo"  /> </a>
+                    </div>
+       <div class="navbar navbar-inverse navbar-static-top " role="navigation">
+
+           <div class="navbar-header">
+
+                           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="fa fa-bars"></span>
+             </button>
+                     <form method="get" id="sformm" action="https://skywarriorthemes.com/fundingpress/">
+                 <input type="search" autocomplete="off" name="s">
+                 <input type="hidden" name="post_type[]" value="post" />
+                 <input type="hidden" name="post_type[]" value="page" />
+                 <i class="fa fa-search"></i>
+           </form>
+
+           </div>
+                       <div class="navbar-collapse collapse">
+                                                       <div class="menu-menu-1-container"><ul  class="nav navbar-nav"><li id="menu-item-2574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2574"><a href="https://skywarriorthemes.com/fundingpress/">Homepage</a></li>
+<li id="menu-item-2914" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2914"><a href="https://skywarriorthemes.com/fundingpress/2902-2/">how it works</a></li>
+<li id="menu-item-2575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2575"><a href="https://skywarriorthemes.com/fundingpress/all-projects/">All projects</a>
+<ul class="sub-menu">
+ <li id="menu-item-4371" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4371"><a href="https://skywarriorthemes.com/fundingpress/in-progress/">In progress</a></li>
+ <li id="menu-item-4370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4370"><a href="https://skywarriorthemes.com/fundingpress/successful/">Successful</a></li>
+ <li id="menu-item-2948" class="menu-item menu-item-type-post_type menu-item-object-project menu-item-2948"><a href="https://skywarriorthemes.com/fundingpress/project/dance-with-fire/">Unsuccessful</a></li>
+</ul>
+</li>
+<li id="menu-item-2592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2592"><a href="https://skywarriorthemes.com/fundingpress/blog-right-sidebar/">Blog</a>
+<ul class="sub-menu">
+ <li id="menu-item-2591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2591"><a href="https://skywarriorthemes.com/fundingpress/blog-right-sidebar/">Blog – Right Sidebar</a></li>
+ <li id="menu-item-2590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2590"><a href="https://skywarriorthemes.com/fundingpress/blog-left-sidebar/">Blog – Left Sidebar</a></li>
+ <li id="menu-item-2589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2589"><a href="https://skywarriorthemes.com/fundingpress/blog-fullwidth/">Blog – Fullwidth</a></li>
+ <li id="menu-item-2588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2588"><a href="https://skywarriorthemes.com/fundingpress/blog-isotope/">Blog – Isotope</a></li>
+</ul>
+</li>
+<li id="menu-item-2947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2947"><a href="https://skywarriorthemes.com/fundingpress/contact/">Contact</a></li>
+</ul></div>                	                                <div class="clear"></div>
+                        </div><!--/.nav-collapse -->
+
+
+                             <div class="clear"></div>
+
+         <div class="clear"></div>
+  </div>
+
+     </div> <!-- /.container -->
+   </div><!-- /.navbar-wrapper -->
+
+<div class="page-title">
+   <div class="container">
+           <div class="col-md-12">
+               <div class="title-page">
+                   <h1>Submit project            </h1>
+             </div>
+                                 <div class="breadcrumbs"><a href="https://skywarriorthemes.com/fundingpress">Home</a> / Submit project</div>
+                           </div>
+     </div>
+</div>
+
+</header><!-- /.header -->
+
+<div id="myModalL" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal-dialog">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+       <h3>Login</h3>
+     </div>
+     <div class="modal-body">
+       <div id="LoginWithAjax">
+               <table cellpadding="0" cellspacing="0" width="100%">
+           <tr>
+               <td class="avatar" id="LoginWithAjax_Avatar">
+                   <img src="" width="50" height="50" alt="" />		            </td>
+               <td>
+                     <a id="wp-logout" href="https://skywarriorthemes.com/fundingpress/wp-login.php?action=logout&#038;redirect_to=https%3A%2F%2Fskywarriorthemes.com%2Ffundingpress&#038;_wpnonce=498508bbff">log out</a><br />
+               </td>
+           </tr>
+       </table>
+   </div>
+         </div>
+   </div>
+ </div>
+</div>
+
+<div id="myModalR" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal-dialog">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+       <h3>Register For This Site</h3>
+     </div>
+     <div class="modal-body">
+       <div id="LoginWithAjax_Footer">
+           <div id="LoginWithAjax_Register"  class="default">
+                   <span id="LoginWithAjax_Register_Status"></span>
+
+               <form name="LoginWithAjax_Register" id="LoginWithAjax_Register_Form" action="https://skywarriorthemes.com/fundingpress/wp-login.php?action=register&callback=?&template=" method="post">
+                   <p>
+                       <label><input type="text" placeholder="Username" name="user_login" id="user_login" class="input" size="20" tabindex="10" /></label>
+                   </p>
+                   <p>
+                       <label><input type="text" placeholder="E-mail" name="user_email" id="user_email" class="input" size="25" tabindex="20" /></label>
+                   </p>
+                                       <p id="reg_passmail">A password will be e-mailed to you.</p>
+                   <p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button-green button-small" value="Register" tabindex="100" /></p>
+                   <input type="hidden" name="lwa" value="1" />
+               </form>
+
+           </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+
+
+ <div id="myModalD" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+     <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+           <h3>Delete</h3>
+         </div>
+         <div class="modal-body">
+         Are you sure you want to delete this project?<br/><br/>
+         <script>
+
+           jQuery( document ).ready(function() {
+               var id = 0;
+               var prid = jQuery('.dproject');
+               prid.on( "click", function() {
+                  var myClass = jQuery(this).attr("class");
+                  myClass = myClass.replace(/\D/g,'');
+                  id = parseInt(myClass, 10);
+
+               });
+
+               var conf = jQuery('#conf');
+               conf.on( "click", function() {
+                 delete_project(id);
+               });
+
+           });
+
+         </script>
+
+          <a id="conf" class="delete-button button-small button-red">Yes</a>
+
+          <button type="button" class="button-small button-grey" data-dismiss="modal" aria-hidden="true">No</button>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <style>
+   html{
+   background-image:url(https://skywarriorthemes.com/fundingpress/wp-content/uploads/2016/08/fbg.jpg) !important;
+   background-position:center top !important;
+   background-repeat:  no-repeat !important;
+}
+</style>
+<div class=" page normal-page sub-project">
+ <div class="container">
+   <div class="row">
+       <div class="col-md-8 col-sm-12">
+           <div id="primary">
+           <form action="" id="primaryPostForm" method="POST" enctype="multipart/form-data">
+           <fieldset class="lp-info">
+       <i class="fa fa-exclamation-circle"></i>	You need to connect your PayPal, Stripe or WePay account. Please go to My Account / Funding details.			</fieldset>
+                  <fieldset>
+
+               <label for="postTitle">Project Title:</label>
+               <input type="text" name="postTitle" id="postTitle" value="" class="required" />
+
+
+
+                           </fieldset>
+
+<div id="HiddenUploader" style="width:0;height:0;overflow:hidden;"></div>
+           <fieldset>
+
+               <label for="postImage">Campaign photo:</label>
+
+
+
+       Image needs to be at least 360x240px
+        <div id="flash"></div>
+         <div id="ajaxresult">
+
+
+         </div>
+         <div id="files">
+        </div>
+       <span id="me" class="styleall button-small fileinput-button" style="display: none; cursor:pointer;">
+
+           Click Here To Upload Photo<input id="meimg" type="file" name="files[]" >
+
+       </span>
+
+
+       <div id="load"></div><span id="mestatus" ></span>
+
+
+       <div id="status"></div>
+       <div id="cropme" style="display:none;"><a class="button-small crop-me">CROP IMAGE</a></div>
+
+       <div id="cancelme0" style="display:none;"><a class="button-small">Cancel</a></div>
+
+
+       <div id="cancelme" style="display:none;"><a class="button-small">Cancel</a></div>
+               <br>
+            <input type="hidden" name="postImage" id="postImage" value=""/>
+
+           </fieldset>
+
+          <fieldset>
+
+               <label for="postEmbed">Project video</label>
+               <label for="postEmbed">Add your project embed video URL here:</label>
+               <textarea name="postEmbed" id="postEmbed" ></textarea>
+
+           </fieldset>
+
+
+           <fieldset>
+               <label for="postCategory">Project Category:</label>
+
+           <select name="postCategory" class="postCategory" id="postCategory"><option value="art">Art</option><option value="comics">Comics</option><option value="film-video">Film &amp; Video</option><option value="games">Games</option><option value="music">Music</option><option value="photography">Photography</option><option value="technology">Technology</option></select>            </fieldset>
+
+<div class="rewardnasubmitu">
+<fieldset>
+ <label for="add_reward">Add a reward</label>
+   <div id="add_reward" class="button-small button-inverted">ADD REWARD</div>
+   <div id="rewards_holder">
+
+
+   </div>
+</fieldset>
+</div>
+<fieldset>
+ <label for="currency">Currency</label>
+   <select onchange="get_currency_sign(this.value);" name="currency" id="currency" >
+             <option value=AUD >Australian Dollar</option>
+             <option value=CAD >Canadian Dollar</option>
+             <option value=CNY >Chinese Yaun</option>
+             <option value=CZK >Czech Koruna</option>
+             <option value=DKK >Danish Krone</option>
+             <option value=EUR >Euro</option>
+             <option value=HKD >Hong Kong Dollar</option>
+             <option value=HUF >Hungarian Forint</option>
+             <option value=INR >Indian Rupee</option>
+             <option value=ILS >Israeli New Sheqel</option>
+             <option value=JPY >Japanese Yen</option>
+             <option value=MXN >Mexican Peso</option>
+             <option value=NGN >Nigerian Naira</option>
+             <option value=NOK >Norwegian Krone</option>
+             <option value=NZD >New Zealand Dollar</option>
+             <option value=PHP >Philippine Peso</option>
+             <option value=PLN >Polish Zloty</option>
+             <option value=GBP >Pound Sterling</option>
+             <option value=RUB >Russian Ruble</option>
+             <option value=SGD >Singapore Dollar</option>
+             <option value=SEK >Swedish Krona</option>
+             <option value=CHF >Swiss Franc</option>
+             <option value=TWD >Taiwan New Dollar</option>
+             <option value=THB >Thai Baht</option>
+             <option value=USD >U.S. Dollar</option>
+         </select>
+</fieldset>
+
+
+
+<fieldset>
+ <label for="amount">Target</label>
+ <input type="text" name="amount" id="amount" value="" class="required" />
+</fieldset>
+
+<fieldset>
+  <label for="projectdate">Date</label>
+  <input name="postDate" id="postDate" class="date_expiration" value="" />
+  <div class="description">Date that funding ends.</div>
+</fieldset>
+           <fieldset>
+
+               <label for="postStory">Edit Your Story:</label>
+
+               <div id="wp-postStory-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><link rel='stylesheet' id='editor-buttons-css'  href='https://skywarriorthemes.com/fundingpress/wp-includes/css/editor.min.css?ver=4.9.3' type='text/css' media='all' />
+<div id="wp-postStory-editor-tools" class="wp-editor-tools hide-if-no-js"><div class="wp-editor-tabs"><button type="button" id="postStory-tmce" class="wp-switch-editor switch-tmce" data-wp-editor-id="postStory">Visual</button>
+<button type="button" id="postStory-html" class="wp-switch-editor switch-html" data-wp-editor-id="postStory">Text</button>
+</div>
+</div>
+<div id="wp-postStory-editor-container" class="wp-editor-container"><div id="qt_postStory_toolbar" class="quicktags-toolbar"></div><textarea class="widefat wp-editor-area" rows="10" autocomplete="off" cols="40" name="postStory" id="postStory"></textarea></div>
+</div>
+
+
+           </fieldset>
+
+       <div class="clear"></div>
+       </div>
+</div>
+        <div class="col-md-4 col-sm-12 sidebar">
+
+
+              <div class="pb-container project-card">
+           <div class="pb-category">Category</div>
+           <div class="pb-image project-thumb-wrapper">
+                             <img class="userimg" src="https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/img/defaults/default_user.png" />
+
+                                <img class="pbimage" src="https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/img/defaults/default_project.jpg">
+                          </div>
+           <div class="pb-title bbcard_name">
+                               <h3>Title goes here</h3>
+                                           <p class="pb-content">&ldquo;
+                                   Your message goes here                                    &rdquo;</p>
+           <div class="progress progress-striped active bar-green"><div style="width: 100%" class="bar"></div></div>
+           <ul class="pb-summary project-stats">
+               <li class="pb-funded first funded">
+                  <strong> 0% </strong>funded</h4>
+               </li>
+               <li class="pb-target pledged">
+                  <strong> <span class="cu">$</span> <span class="am">0 </span></br> </strong>target                </li>
+               <li class="pb-left">
+                <strong><div id="daysLeft"><script>jQuery( document ).ready(function() {DaysLeft();});</script>999</div> <span></strong>days left                </li>
+               <div class="clear"></div>
+           </ul>
+     <div class="clear"></div>
+       </div>
+             <fieldset class="sub-bar">
+
+               <input type="hidden" id="post_nonce_field" name="post_nonce_field" value="a13b8bd1fa" /><input type="hidden" name="_wp_http_referer" value="/fundingpress/submit-project-3/" />
+               <input type="hidden" name="submitted" id="submitted" value="true" />
+
+
+                               <button name="submit" class="button-small button-inverted" value="draft" type="submit">Save</button>
+               <button name="submit" class="button-small" value="publish" type="submit">Publish</button>
+
+               <a href="https://skywarriorthemes.com/fundingpress/my-account/">Cancel</a>
+                           </fieldset>
+         </div>
+   </div>
+   </div>
+</div>
+</form>
+
+</div> <!-- End of container -->
+ <!-- FOOTER -->
+   <footer>
+     <div class="container">
+
+                       <div class="footer_widget col-lg-4"><h3>CONTACT</h3>			<div class="textwidget"> <a href="https://skywarriorthemes.com/fundingpress"> <img src="https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/img/logo.png" style="margin-top:-25px; margin-bottom:10px;" alt="logo"> </a>
+
+
+<div style="border-bottom: 1px solid #333333;
+   padding-bottom: 15px;
+   margin-bottom: 15px;
+   margin-top: 15px;
+   font-size: 14px;
+   color: #ccc;
+">
+<div style="margin-bottom:5px;"><i style="font-size: 16px;
+   display: inline-block;
+   top: 2px;
+width:15px;
+text-align:center;
+   position: relative;
+   margin-right: 10px;" class="fa fa-map-marker" aria-hidden="true"></i> Address: </div> 908 61 Leeton Ridge Drive <br> Klamath Falls, OR 97603, United States</div>
+
+<div style="    font-size: 14px;
+   color: #ccc;     margin-bottom: 10px;"><i style="font-size:23px;
+width:15px;
+text-align:center;
+   display: inline-block;
+   top: 0px;
+   position: relative;
+   margin-right: 5px;" class="fa fa-mobile" aria-hidden="true"></i> Phone: +1 916-875-2235</div>
+<div style="    font-size: 14px;
+   color: #ccc;     margin-bottom: 10px;"><i style="font-size: 16px;
+   display: inline-block;
+   top: 2px;
+width:15px;
+text-align:center;
+   position: relative;
+   margin-right: 5px;" class="fa fa-fax" aria-hidden="true"></i> Fax: +1 916-875-2235</div>
+<div style="    font-size: 14px;
+   color: #ccc;     margin-bottom: 10px;"><i style="font-size: 16px;
+   display: inline-block;
+   top: 2px;
+width:15px;
+text-align:center;
+   position: relative;
+   margin-right: 5px;" class="fa fa-envelope-o" aria-hidden="true"></i> Email: <a href="mailto:info@domain.com">info@domain.com</a></div>
+<div style="    font-size: 14px;
+   color: #ccc;     margin-bottom: 10px;"><i style="font-size: 16px;
+   display: inline-block;
+   top: 2px;
+width:15px;
+text-align:center;
+   position: relative;
+   margin-right: 5px;" class="fa fa-globe" aria-hidden="true"></i> Website: <a href="https://www.skywarriorthemes.com">www.skywarriorthemes.com</a></div></div>
+   </div><div class="footer_widget col-lg-4"><h3> Project Categories</h3> 		<ul>
+
+<li><a href="https://skywarriorthemes.com/fundingpress/categories/art/" title="View all posts in Art" >Art</a></li><li><a href="https://skywarriorthemes.com/fundingpress/categories/comics/" title="View all posts in Comics" >Comics</a></li><li><a href="https://skywarriorthemes.com/fundingpress/categories/film-video/" title="View all posts in Film &amp; Video" >Film &amp; Video</a></li><li><a href="https://skywarriorthemes.com/fundingpress/categories/games/" title="View all posts in Games" >Games</a></li><li><a href="https://skywarriorthemes.com/fundingpress/categories/music/" title="View all posts in Music" >Music</a></li><li><a href="https://skywarriorthemes.com/fundingpress/categories/photography/" title="View all posts in Photography" >Photography</a></li><li><a href="https://skywarriorthemes.com/fundingpress/categories/technology/" title="View all posts in Technology" >Technology</a></li>
+   </ul>
+</div>
+ <div class="footer_widget col-lg-4">	<h3> Latest projects</h3>
+
+   <ul class="review p-widget">
+
+
+     <li>	            <div class="img">
+
+                         <a href="https://skywarriorthemes.com/fundingpress/project/coffee-art/"><img src="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2016/09/coffee-57x57.jpg" /></a><span class="overlay-link"></span>
+                              </div>
+
+               <div class="info">
+
+
+           <h4 class="posttitle"><a href="https://skywarriorthemes.com/fundingpress/project/coffee-art/">Coffee art</a></h4>
+           <div class="post-author">
+                         by             	<a href="https://skywarriorthemes.com/fundingpress/author/kayc/">
+               Kay            	</a>
+                        </div>
+           <div id="post-content">
+
+
+           <div class="progress progress-striped active bar-green"><div style="width: 219%" class="bar"></div></div>
+
+           <ul class="project-stats">
+                <li class="first funded">
+                    <strong>219%</strong>funded                </li>
+               <li class="pledged">
+                   <strong>
+                        $1,500</strong>target                </li>
+                <li data-end_time="2013-02-24T08:41:18Z" class="last ksr_page_timer">
+                                                                                                       <strong>65</strong>
+
+
+                                                                            days to go
+                                                     </li>
+           </ul>
+         </div> <!--post-content -->
+          </div> <!-- info -->
+      <div class="clear"></div>
+     </li>
+
+
+     <li>	            <div class="img">
+
+                         <a href="https://skywarriorthemes.com/fundingpress/project/dance-with-fire/"><img src="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2016/09/UJO0jYLtRte4qpyA37Xu_9X6A7388-57x57.jpg" /></a><span class="overlay-link"></span>
+                              </div>
+
+               <div class="info">
+
+
+           <h4 class="posttitle"><a href="https://skywarriorthemes.com/fundingpress/project/dance-with-fire/">Dance with fire</a></h4>
+           <div class="post-author">
+                         by             	<a href="https://skywarriorthemes.com/fundingpress/author/serlang/">
+               Serge            	</a>
+                        </div>
+           <div id="post-content">
+
+
+           <div class="progress progress-striped active bar-green"><div style="width: 11%" class="bar"></div></div>
+
+           <ul class="project-stats">
+                <li class="first funded">
+                    <strong>11%</strong>funded                </li>
+               <li class="pledged">
+                   <strong>
+                        $7,000</strong>target                </li>
+                <li data-end_time="2013-02-24T08:41:18Z" class="last ksr_page_timer">
+                                                       <strong> Ended</strong>
+                                                     Unsuccessful																			                    			                </li>
+           </ul>
+         </div> <!--post-content -->
+          </div> <!-- info -->
+      <div class="clear"></div>
+     </li>
+
+
+     <li>	            <div class="img">
+
+                         <a href="https://skywarriorthemes.com/fundingpress/project/encoding/"><img src="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2018/01/cropped_1516703437show-all-reviews-57x57.jpg" /></a><span class="overlay-link"></span>
+                              </div>
+
+               <div class="info">
+
+
+           <h4 class="posttitle"><a href="https://skywarriorthemes.com/fundingpress/project/encoding/">encoding</a></h4>
+           <div class="post-author">
+                         by             	<a href="https://skywarriorthemes.com/fundingpress/author/muzammil/">
+               ENcoding            	</a>
+                        </div>
+           <div id="post-content">
+
+
+           <div class="progress progress-striped active bar-green"><div style="width: 0%" class="bar"></div></div>
+
+           <ul class="project-stats">
+                <li class="first funded">
+                    <strong>0%</strong>funded                </li>
+               <li class="pledged">
+                   <strong>
+                        ₹10,000</strong>target                </li>
+                <li data-end_time="2013-02-24T08:41:18Z" class="last ksr_page_timer">
+                                                       <strong> Ended</strong>
+                                                     Unsuccessful																			                    			                </li>
+           </ul>
+         </div> <!--post-content -->
+          </div> <!-- info -->
+      <div class="clear"></div>
+     </li>
+
+   </ul>
+
+
+             </div>
+     </div>
+   </footer>
+
+   <div class="copyright">
+     <div class="container  cpr">
+           <p>© 2018&nbsp;Made by Skywarrior Themes.        		&nbsp;
+         <a href="https://www.skywarriorthemes.com/">Privacy</a> ·
+         <a href="https://www.skywarriorthemes.com/">Terms</a></p>
+       </div>
+   </div>
+
+
+
+<script>
+ function social_startlogin(provider, proceed) {
+   var CurrentLocation = "httpsskywarriorthemes.com/fundingpress/submit-project-3/";
+   window.location.replace(settings.authlocation+"handler/index.php?initiatelogin=" + provider + "&returnto=" + encodeURIComponent(CurrentLocation));
+ }
+
+
+
+
+ function get_currency_sign(cur) {
+
+
+      jQuery.ajax({
+       type: 'POST',
+       url: ajaxurl,
+       data: {"action": "return_currency", curr: cur },
+       success: function(response) {
+             jQuery( ".pb-target .cu" ).text(response);
+           return false;
+       }
+   });
+}
+
+function cat_ajax_get_all(catID) {
+      jQuery('.category-menu li').click(function(li) {
+       jQuery('li').removeClass('current');
+       jQuery(this).addClass('current');
+       });
+
+    jQuery(".category-post-content").hide();
+   jQuery(".loading-animation").show();
+
+
+
+      jQuery.ajax({
+       type: 'POST',
+       url: ajaxurl,
+       data: {"action": "load-filter-all", cat: catID   },
+       success: function(response) {
+           jQuery(".category-post-content").html(response);
+           jQuery(".loading-animation").hide();
+           jQuery(".category-post-content").show();
+           return false;
+       }
+   });
+}
+</script>
+
+<script>
+jQuery(document).ready(function() {
+ jQuery('#WePayUnlink').click(function (e) {
+
+       jQuery.ajax({
+       type: 'POST',
+       url: ajaxurl,
+       data: {"action": "funding_unlink_wepay"},
+       success: function(response) {
+          if (response.substr(0,2) == "ok") {
+             location.reload();
+          }
+       }
+   });
+ });
+
+
+ jQuery('#StripeUnlink').click(function (e) {
+
+       jQuery.ajax({
+       type: 'POST',
+       url: ajaxurl,
+       data: {"action": "funding_unlink_stripe"},
+       success: function(response) {
+          if (response.trim().substr(0,2) == "ok") {
+             location.reload();
+          }
+       }
+   });
+ });
+
+   jQuery( "#currency" )
+ .change(function () {
+   var str = "";
+   jQuery( "#currency option:selected" ).each(function() {
+     str += jQuery( this ).val();
+   });
+   jQuery( ".pb-target .cu" ).text("");
+ })
+ .change(); });
+</script>
+
+<script>
+/*rewards options*/
+jQuery(document).ready(function() {
+var chosen = jQuery('.chosen_reward');
+var amount = jQuery('#field-amount');
+var zerorew = jQuery('.chosen_reward_value');
+var rewlist = jQuery('#project-rewards-list');
+
+if(amount.val() == 0 ){
+ jQuery('#project-rewards-list .chosen_reward').first().prop('checked', true);
+}
+amount.keydown(function (e) {
+       // Allow: backspace, delete, tab, escape, enter and .
+       if (jQuery.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+            // Allow: Ctrl+A, Command+A
+           (e.keyCode == 65 && ( e.ctrlKey === true || e.metaKey === true ) ) ||
+            // Allow: home, end, left, right, down, up
+           (e.keyCode >= 35 && e.keyCode <= 40)) {
+                // let it happen, don't do anything
+                return;
+       }
+       // Ensure that it is a number and stop the keypress
+       if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+           e.preventDefault();
+       }
+   });
+
+
+chosen.click(function() {
+   amount.val(jQuery(this).next('input').val());
+});
+});
+</script>
+<script>
+function delpost(id){
+
+   var Keep = id;
+       jQuery.ajax({
+           type: "POST",
+           url: ajaxurl,
+           data: {  action: 'delcomments',id: id},
+           success: function(data, textStatus, XMLHttpRequest){
+
+              jQuery('#li-comment-'+id).hide();
+              jQuery('#li-comment-update-'+id).hide();
+           }
+       });
+}
+ jQuery(document).ready(function() {
+   jQuery('.comment_deletor').click(function(e) {
+     var cid =  jQuery(this).data('cid');
+     var type =  jQuery(this).data('type');
+     jQuery.ajax({
+         type: "POST",
+         url: ajaxurl,
+         data: {  action: 'delcomments',id: cid},
+         success: function(data, textStatus, XMLHttpRequest){
+           if (type == "comment") {
+             jQuery('#comments_counter').fadeOut('fast', function() {
+               var temp = jQuery('#comments_counter').html();
+               temp = temp - 1;
+               jQuery('#comments_counter').html(temp);
+               jQuery('#comments_counter').fadeIn();
+             });
+           } else if (type == "update") {
+             jQuery('#updates_counter').fadeOut('fast', function() {
+               var temp = jQuery('#updates_counter').html();
+               temp = temp - 1;
+               jQuery('#updates_counter').html(temp);
+               jQuery('#updates_counter').fadeIn();
+             });
+           }
+            jQuery('#li-comment-'+cid).hide();
+            jQuery('#li-comment-update-'+cid).hide();
+         }
+     });
+   });
+ });
+
+function delete_project(prID) {
+
+       jQuery.ajax({
+       type: 'POST',
+       url: ajaxurl,
+       data: {"action": "funding_delete_projects", "idp" : prID},
+       success: function(response) {
+
+          if (response.trim().substr(0,2) == "ok") {
+             location.reload();
+          }
+       }
+   });
+}
+
+</script>
+ <div id="fb-root"></div>
+ <link rel='stylesheet' id='buttons-css'  href='https://skywarriorthemes.com/fundingpress/wp-includes/css/buttons.min.css?ver=4.9.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/admin-bar.min.js?ver=4.9.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/skywarriorthemes.com\/fundingpress\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9.2'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/bootstrap.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/bootstrap-tooltip.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/bootstrap-tab.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/easing.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/jquery.ui.totop.min.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/imagescale.js?ver=4.9.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_login_object = {"ajaxurl":"https:\/\/skywarriorthemes.com\/fundingpress\/wp-admin\/admin-ajax.php","redirecturl":"https:\/\/skywarriorthemes.com\/fundingpress","loadingmessage":"Signing in, please wait..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/login-with-ajax.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/jquery.validate.min.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/picker.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/jquery-ui-1.10.2.custom.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/isotope.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/global.js?ver=4.9.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var settings = {"authlocation":"https:\/\/skywarriorthemes.com\/fundingpress\/wp-content\/themes\/fundingpress\/include\/","ajax":"https:\/\/skywarriorthemes.com\/fundingpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/social.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/jquery.iframe-transport.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/jquery.fileupload.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/jquery.fileupload-ui.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/jquery.fileupload-process.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/jquery.Jcrop.min.js?ver=4.9.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uploadsettings = {"wp_upload_dir_path":"\/home\/skywarri\/public_html\/fundingpress\/wp-content\/uploads\/2018\/03\/","wp_upload_dir_url":"https:\/\/skywarriorthemes.com\/fundingpress\/wp-content\/uploads\/2018\/03\/"};
+var settingsCustom = {"dateformat":"","NowDay":"07","NowMonth":"03","NowYear":"2018","uploadfileformat":"Only JPG, JPEG and PNG files are allowed","uploadphotoscu":"Photo Is Uploading...","uploaderror":"Error!","pleasefinishcrop":"Please finish cropping the other image first!","urlcheckbad":"URL is not valid!","urlnumbercheck":"Valid number!","urlnumberrange":"Number must be in 1-500 range!","urlnumberinputcheck":"Input must be a number in 1-500 range!","minimumammount":"Minimum Amount","available":"Number Available","rewtitle":"Reward title","rewdesc":"Reward description","remove":"REMOVE ME"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/submitproject.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/jquery-ui-1.10.3.custom.min.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/plugins/super-socializer/js/front/social_login/general.js?ver=7.9.5'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/plugins/super-socializer/js/front/facebook/sdk.js?ver=7.9.5'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/plugins/super-socializer/js/front/facebook/commenting.js?ver=7.9.5'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/wp-embed.min.js?ver=4.9.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/fundingpress\/","uid":"672","time":"1520417954","secure":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/utils.min.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-admin/js/editor.min.js?ver=4.9.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var quicktagsL10n = {"closeAllOpenTags":"Close all open tags","closeTags":"close tags","enterURL":"Enter the URL","enterImageURL":"Enter the URL of the image","enterImageDescription":"Enter a description of the image","textdirection":"text direction","toggleTextdirection":"Toggle Editor Text Direction","dfw":"Distraction-free writing mode","strong":"Bold","strongClose":"Close bold tag","em":"Italic","emClose":"Close italic tag","link":"Insert link","blockquote":"Blockquote","blockquoteClose":"Close blockquote tag","del":"Deleted text (strikethrough)","delClose":"Close deleted text tag","ins":"Inserted text","insClose":"Close inserted text tag","image":"Insert image","ul":"Bulleted list","ulClose":"Close bulleted list tag","ol":"Numbered list","olClose":"Close numbered list tag","li":"List item","liClose":"Close list item tag","code":"Code","codeClose":"Close code tag","more":"Insert Read More tag"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/quicktags.min.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/wp-a11y.min.js?ver=4.9.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpLinkL10n = {"title":"Insert\/edit link","update":"Update","save":"Add Link","noTitle":"(no title)","noMatchesFound":"No results found.","linkSelected":"Link selected.","linkInserted":"Link inserted."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/wplink.min.js?ver=4.9.3'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/jquery/ui/menu.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.11.4'></script>
+
+   <script type="text/javascript">
+   tinyMCEPreInit = {
+     baseURL: "https://skywarriorthemes.com/fundingpress/wp-includes/js/tinymce",
+     suffix: ".min",
+           mceInit: {'postStory':{theme:"modern",skin:"lightgray",language:"en",formats:{alignleft: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"left"}},{selector: "img,table,dl.wp-caption", classes: "alignleft"}],aligncenter: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"center"}},{selector: "img,table,dl.wp-caption", classes: "aligncenter"}],alignright: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"right"}},{selector: "img,table,dl.wp-caption", classes: "alignright"}],strikethrough: {inline: "del"}},relative_urls:false,remove_script_host:false,convert_urls:false,browser_spellcheck:true,fix_list_elements:true,entities:"38,amp,60,lt,62,gt",entity_encoding:"raw",keep_styles:false,cache_suffix:"wp-mce-4607-20180123",resize:"vertical",menubar:false,branding:false,preview_styles:"font-family font-size font-weight font-style text-decoration text-transform",end_container_on_empty_block:true,wpeditimage_html5_captions:true,wp_lang_attr:"en-US",wp_keep_scroll_position:false,wp_shortcut_labels:{"Heading 1":"access1","Heading 2":"access2","Heading 3":"access3","Heading 4":"access4","Heading 5":"access5","Heading 6":"access6","Paragraph":"access7","Blockquote":"accessQ","Underline":"metaU","Strikethrough":"accessD","Bold":"metaB","Italic":"metaI","Code":"accessX","Align center":"accessC","Align right":"accessR","Align left":"accessL","Justify":"accessJ","Cut":"metaX","Copy":"metaC","Paste":"metaV","Select all":"metaA","Undo":"metaZ","Redo":"metaY","Bullet list":"accessU","Numbered list":"accessO","Insert\/edit image":"accessM","Remove link":"accessS","Toolbar Toggle":"accessZ","Insert Read More tag":"accessT","Insert Page Break tag":"accessP","Distraction-free writing mode":"accessW","Keyboard Shortcuts":"accessH"},content_css:"https://skywarriorthemes.com/fundingpress/wp-includes/css/dashicons.min.css?ver=4.9.3,https://skywarriorthemes.com/fundingpress/wp-includes/js/tinymce/skins/wordpress/wp-content.css?ver=4.9.3",plugins:"colorpicker,lists,fullscreen,image,wordpress,wpeditimage,wplink",selector:"#postStory",wpautop:true,indent:false,toolbar1:"bold,italic,underline,blockquote,strikethrough,bullist,numlist,alignleft,aligncenter,alignright,undo,redo,link,fullscreen",toolbar2:"",toolbar3:"",toolbar4:"",tabfocus_elements:":prev,:next",body_class:"postStory post-type-page post-status-publish page-template-tmp-submit-project locale-en-us"}},
+     qtInit: {'postStory':{id:"postStory",buttons:"strong,em,link,block,del,ins,img,ul,ol,li,code,more,close"}},
+     ref: {plugins:"colorpicker,lists,fullscreen,image,wordpress,wpeditimage,wplink",theme:"modern",language:"en"},
+     load_ext: function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+   };
+   </script>
+   <script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/tinymce/tinymce.min.js?ver=4607-20180123'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/tinymce/plugins/compat3x/plugin.min.js?ver=4607-20180123'></script>
+<script type='text/javascript'>
+tinymce.addI18n( 'en', {"Ok":"OK","Bullet list":"Bulleted list","Insert\/Edit code sample":"Insert\/edit code sample","Url":"URL","Spellcheck":"Check Spelling","Row properties":"Table row properties","Cell properties":"Table cell properties","Paste row before":"Paste table row before","Paste row after":"Paste table row after","Cut row":"Cut table row","Copy row":"Copy table row","Merge cells":"Merge table cells","Split cell":"Split table cell","Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.":"Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.\n\nIf you\u2019re looking to paste rich content from Microsoft Word, try turning this option off. The editor will clean up text pasted from Word automatically.","Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help":"Rich Text Area. Press Alt-Shift-H for help.","You have unsaved changes are you sure you want to navigate away?":"The changes you made will be lost if you navigate away from this page.","Your browser doesn't support direct access to the clipboard. Please use the Ctrl+X\/C\/V keyboard shortcuts instead.":"Your browser does not support direct access to the clipboard. Please use keyboard shortcuts or your browser\u2019s edit menu instead.","Edit ":"Edit"});
+tinymce.ScriptLoader.markDone( 'https://skywarriorthemes.com/fundingpress/wp-includes/js/tinymce/langs/en.js' );
+</script>
+   <script type="text/javascript">
+   var ajaxurl = "/fundingpress/wp-admin/admin-ajax.php";
+   ( function() {
+     var init, id, $wrap;
+
+     if ( typeof tinymce !== 'undefined' ) {
+       if ( tinymce.Env.ie && tinymce.Env.ie < 11 ) {
+         tinymce.$( '.wp-editor-wrap ' ).removeClass( 'tmce-active' ).addClass( 'html-active' );
+         return;
+       }
+
+       for ( id in tinyMCEPreInit.mceInit ) {
+         init = tinyMCEPreInit.mceInit[id];
+         $wrap = tinymce.$( '#wp-' + id + '-wrap' );
+
+         if ( ( $wrap.hasClass( 'tmce-active' ) || ! tinyMCEPreInit.qtInit.hasOwnProperty( id ) ) && ! init.wp_skip_init ) {
+           tinymce.init( init );
+
+           if ( ! window.wpActiveEditor ) {
+             window.wpActiveEditor = id;
+           }
+         }
+       }
+     }
+
+     if ( typeof quicktags !== 'undefined' ) {
+       for ( id in tinyMCEPreInit.qtInit ) {
+         quicktags( tinyMCEPreInit.qtInit[id] );
+
+         if ( ! window.wpActiveEditor ) {
+           window.wpActiveEditor = id;
+         }
+       }
+     }
+   }());
+   </script>
+       <div id="wp-link-backdrop" style="display: none"></div>
+   <div id="wp-link-wrap" class="wp-core-ui" style="display: none" role="dialog" aria-labelledby="link-modal-title">
+   <form id="wp-link" tabindex="-1">
+   <input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="089d9cd6d9" />		<h1 id="link-modal-title">Insert/edit link</h1>
+   <button type="button" id="wp-link-close"><span class="screen-reader-text">Close</span></button>
+   <div id="link-selector">
+     <div id="link-options">
+       <p class="howto" id="wplink-enter-url">Enter the destination URL</p>
+       <div>
+         <label><span>URL</span>
+         <input id="wp-link-url" type="text" aria-describedby="wplink-enter-url" /></label>
+       </div>
+       <div class="wp-link-text-field">
+         <label><span>Link Text</span>
+         <input id="wp-link-text" type="text" /></label>
+       </div>
+       <div class="link-target">
+         <label><span></span>
+         <input type="checkbox" id="wp-link-target" /> Open link in a new tab</label>
+       </div>
+     </div>
+     <p class="howto" id="wplink-link-existing-content">Or link to existing content</p>
+     <div id="search-panel">
+       <div class="link-search-wrapper">
+         <label>
+           <span class="search-label">Search</span>
+           <input type="search" id="wp-link-search" class="link-search-field" autocomplete="off" aria-describedby="wplink-link-existing-content" />
+           <span class="spinner"></span>
+         </label>
+       </div>
+       <div id="search-results" class="query-results" tabindex="0">
+         <ul></ul>
+         <div class="river-waiting">
+           <span class="spinner"></span>
+         </div>
+       </div>
+       <div id="most-recent-results" class="query-results" tabindex="0">
+         <div class="query-notice" id="query-notice-message">
+           <em class="query-notice-default">No search term specified. Showing recent items.</em>
+           <em class="query-notice-hint screen-reader-text">Search or use up and down arrow keys to select an item.</em>
+         </div>
+         <ul></ul>
+         <div class="river-waiting">
+           <span class="spinner"></span>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="submitbox">
+     <div id="wp-link-cancel">
+       <button type="button" class="button">Cancel</button>
+     </div>
+     <div id="wp-link-update">
+       <input type="submit" value="Add Link" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
+     </div>
+   </div>
+   </form>
+   </div>
+       <div id="wpadminbar" class="nojq nojs">
+             <a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+           <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+       <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+   <li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://skywarriorthemes.com/fundingpress/wp-admin/about.php"><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+   <li id="wp-admin-bar-about"><a class="ab-item" href="https://skywarriorthemes.com/fundingpress/wp-admin/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+   <li id="wp-admin-bar-wporg"><a class="ab-item" href="https://wordpress.org/">WordPress.org</a>		</li>
+   <li id="wp-admin-bar-documentation"><a class="ab-item" href="https://codex.wordpress.org/">Documentation</a>		</li>
+   <li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wordpress.org/support/">Support Forums</a>		</li>
+   <li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li>
+   <li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://skywarriorthemes.com/fundingpress/wp-admin/">FundingPress</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+   <li id="wp-admin-bar-dashboard"><a class="ab-item" href="https://skywarriorthemes.com/fundingpress/wp-admin/">Dashboard</a>		</li></ul><ul id="wp-admin-bar-appearance" class="ab-submenu">
+   <li id="wp-admin-bar-of_theme_options"><a class="ab-item" href="https://skywarriorthemes.com/fundingpress/wp-admin/themes.php?page=options-framework">Theme Options</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+   <li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://skywarriorthemes.com/fundingpress/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"/></form></div>		</li>
+   <li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" aria-haspopup="true" href="https://skywarriorthemes.com/fundingpress/wp-admin/profile.php">Howdy, <span class="display-name">ian</span><img src="" width="26" height="26" alt="" /></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+   <li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="https://skywarriorthemes.com/fundingpress/wp-admin/profile.php"><img src="" width="64" height="64" alt="" /><span class='display-name'>ian</span></a>		</li>
+   <li id="wp-admin-bar-edit-profile"><a class="ab-item" href="https://skywarriorthemes.com/fundingpress/wp-admin/profile.php">Edit My Profile</a>		</li>
+   <li id="wp-admin-bar-logout"><a class="ab-item" href="https://skywarriorthemes.com/fundingpress/wp-login.php?action=logout&#038;_wpnonce=498508bbff">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+           <a class="screen-reader-shortcut" href="https://skywarriorthemes.com/fundingpress/wp-login.php?action=logout&#038;_wpnonce=498508bbff">Log Out</a>
+         </div>
+
+   </div>
+</body></html>
