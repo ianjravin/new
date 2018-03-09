@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <style>
+    /* Backgrounds colours */
+
+    .green-bg,
+    .dropdown-menu li>a:hover,
+    .dropdown-menu li>a:focus,
+    .dropdown-submenu:hover>a,
+    .tagcloud a:hover,
+    #pager li a.active,
+    #pager li a:hover,
+    .menu ul>li>a:hover,
+    .navbar-inverse .nav>li>a:focus,
+    .navbar-inverse .nav>li>a:hover,
+    .navbar-inverse .nav .active>a,
+    .navbar-inverse .nav .active>a:hover,
+    .navbar-inverse .nav .active>a:focus,
+    .navbar-inverse .navbar-nav>li>a:after,
+    .navbar-inverse .nav li.dropdown.open>.dropdown-toggle,
+    .navbar-inverse .nav li.dropdown.active>.dropdown-toggle,
+    .tabbable .nav nav-tabs li a,
+    .bgcolor,
+    #bgcolor,
+    body .nav-tabs>li.active>a,
+    body .nav-tabs>li.active>a:hover,
+    body .nav-tabs>li.active>a:focus,
+    .progress .bar,
+    body .newsbv li .ncategory,
+    .ncategory,
+    .bar-green.progress-striped .bar,
+    input[type=submit],
+    .navbar-inverse .nav li.dropdown.open.active>.dropdown-toggle,
+    a.next:hover,
+    a.prev:hover,
+    .pb-category,
+    .nav-collapse ul.nav li.megamenu>ul>li>ul>li a:hover,
+    .navbar .nav>.active>a,
+    .navbar .nav>.active>a:hover,
+    .navbar .nav>.active>a:focus,
+    .cart-outer {
+      background-color: #63e92a;
+    }
+
+    .woocommerce nav.woocommerce-pagination ul li span.current,
+    .single-product.woocommerce div.product form.cart .button.single_add_to_cart_button,
+    .woocommerce-message a.button {
+      background-color: #63e92a !important;
+    }
+
+    /* Border colours */
+
+    textarea:focus,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:focus,
+    input[type="date"]:focus,
+    input[type="month"]:focus,
+    input[type="time"]:focus,
+    input[type="week"]:focus,
+    input[type="number"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="color"]:focus,
+    .uneditable-input:focus,
+    .navbar-inverse .brand:hover,
+    .navbar-inverse .nav>li>a:hover,
+    .menu ul>li>a:hover,
+    .project-update-info img,
+    body .nav-tabs>li.active>a,
+    body .nav-tabs>li.active>a:hover,
+    body .nav-tabs>li.active>a:focus,
+    .project-backer .cl-lg-3 img,
+    .project-comment .cl-lg-1 img,
+    .project-gallery .gallery-image a,
+    .tabbable .nav nav-tabs li a,
+    .nav-tabs .active a:active,
+    .highlight-block .project-thumb-wrapper a,
+    .project-gallery .gallery-image a:hover,
+    #funding-form #field-amount,
+    .fund-tabs-cont .nav-tabs>li>a:hover,
+    .fund-tabs-cont .nav-tabs>li.active>a,
+    footer h3,
+    .widget_images a img:hover,
+    .widget h3,
+    .navbar .nav>.active>a,
+    .navbar .nav>.active>a:hover,
+    .navbar .nav>.active>a:focus,
+    body.woocommerce nav.woocommerce-pagination ul li a,
+    body.woocommerce nav.woocommerce-pagination ul li span.current {
+      border-color: #63e92a !important;
+      /* IE6-9 */
+    }
+
+    /* Color */
+
+    .newsb-title a:hover,
+    body a,
+    a.login-top i,
+    a.register-top i,
+    a.account-top i,
+    a.submit-top i,
+    a.logout-top i,
+    .category-container .project-stats li strong,
+    .container ul.top-nav li.current-menu-item a,
+    .comment_author_name,
+    .footer_widget>ul>li>a:hover:after,
+    .category-container #post-content .project_collected strong,
+    .navbartop-wrapper .container ul.top-nav li:hover,
+    .project-thumb-wrapper h5 a:hover,
+    .category-menu li a:hover:after,
+    .category-menu li.current a:after,
+    .nav-tabs .active a:active,
+    .fund-tabs-cont .nav-tabs>li>a strong,
+    .category-menu li a:hover,
+    .category-menu li.current a,
+    body.user_project #wpcontent a,
+    .author-info a,
+    h5.bbcard_name a:hover,
+    .footer_widget>ul>li>a:after,
+    body.user_project .breadcrumbs a,
+    .project-card p.plocation span,
+    .blog-list h2 a:hover,
+    .carousel_rating,
+    .navbartop-wrapper .container ul.top-nav li a:hover,
+    a.next:hover,
+    a.prev:hover,
+    #project-rewards-list span,
+    #funding-form #field-amount,
+    .icon span {
+      color: #63e92a;
+    }
+
+    .button-green,
+    .button-small,
+    .button-medium,
+    .nav-tabs .ui-state-active a,
+    body .nav>li>a:hover,
+    .nav-tabs li.active a,
+    .nav-tabsin>.active>a,
+    .nav-tabsin>.active>a:hover,
+    .nav-tabsin>.active>a:focus {
+      background-color: #63e92a
+    }
+
+    .button-green:hover,
+    .button-small:hover,
+    .button-medium:hover,
+    .navsin>li>a,
+    body.woocommerce nav.woocommerce-pagination ul li a:hover {
+      background-color: #689c06;
+    }
+
+    .progress .bar,
+    .highlight-block .project-thumb-wrapper a {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,82f3bd+0,7db9e8+100 */
+      background: #63e92a;
+      /* Old browsers */
+      background: -moz-linear-gradient(left, #82f3be 0%, #63e92a 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #82f3be 0%, #63e92a 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #82f3be 0%, #63e92a 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82f3be', endColorstr='#63e92a', GradientType=1);
+      /* IE6-9 */
+    }
+
+    body.single-project .project-info .progress .bar {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,82f3bd+0,7db9e8+100 */
+      background: #63e92a;
+      /* Old browsers */
+      background: -moz-linear-gradient(bottom, #82f3be 0%, #63e92a 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(bottom, #82f3be 0%, #63e92a 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to top, #82f3be 0%, #63e92a 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82f3be', endColorstr='#63e92a', GradientType=1);
+      /* IE6-9 */
+    }
+  </style>
+  <script type="text/javascript">
+    var templateDir = "https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress";
+    var ajaxurl = "https://skywarriorthemes.com/fundingpress/wp-admin/admin-ajax.php";
+    var premiumoption = "";
+    var formatdatuma = "MM dd, yy";
+  </script>
+
+  <title>Zaka - About Us</title>
+  <script>
+    function theChampLoadEvent(e) {
+      var t = window.onload;
+      if (typeof window.onload != "function") {
+        window.onload = e
+      } else {
+        window.onload = function() {
+          t();
+          e()
+        }
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    var theChampCloseIconPath = 'https://skywarriorthemes.com/fundingpress/wp-content/plugins/super-socializer/images/close.png';
+    var heateorSsSDKBlockedMsg =
+      `Your browser is blocking some features of this website. Please follow the instructions at <a href=\'http://support.heateor.com/browser-blocking-social-features/\' target=\'_blank\' style=\'color:#33a9d8\'>http://support.heateor.com/browser-blocking-social-features/</a> to unblock these.`
+  </script>
+  <script>
+    var theChampSiteUrl = 'https://skywarriorthemes.com/fundingpress',
+      theChampVerified = 0,
+      theChampEmailPopup = 0;
+  </script>
+  <script>
+    var theChampFBKey = '',
+      theChampFBLang = 'en_US',
+      theChampFbLikeMycred = 0,
+      theChampSsga = 0,
+      theChampCommentNotification = 0,
+      theChampHeateorFcmRecentComments = 0,
+      theChampFbIosLogin = 0;
+  </script>
+  <script>
+    var theChampFBCommentUrl = 'https://skywarriorthemes.com/fundingpress/rasutmagnamet/';
+    var theChampFBCommentColor = '';
+    var theChampFBCommentNumPosts = '';
+    var theChampFBCommentWidth = '100%';
+    var theChampFBCommentOrderby = '';
+    var theChampCommentingTabs = "wordpress,facebook,googleplus,disqus",
+      theChampGpCommentsUrl = 'https://skywarriorthemes.com/fundingpress/rasutmagnamet/',
+      theChampDisqusShortname = '',
+      theChampScEnabledTabs = 'wordpress,fb',
+      theChampScLabel = 'Leave a reply',
+      theChampScTabLabels = {
+        "wordpress": "Default Comments (0)",
+        "fb": "Facebook Comments (<fb:comments-count href=https:\/\/skywarriorthemes.com\/fundingpress\/rasutmagnamet\/><\/fb:comments-count>)",
+        "googleplus": "G+ Comments",
+        "disqus": "Disqus Comments"
+      },
+      theChampGpCommentsWidth = 0,
+      theChampCommentingId = 'respond'
+  </script>
+  <style type="text/css">
+    .the_champ_horizontal_sharing .theChampSharing {
+      color: #fff;
+      border-width: 0px;
+      border-style: solid;
+      border-color: transparent;
+    }
+
+    .the_champ_horizontal_sharing .theChampTCBackground {
+      color: #666;
+    }
+
+    .the_champ_horizontal_sharing .theChampSharing:hover {
+      border-color: transparent;
+    }
+
+    .the_champ_vertical_sharing .theChampSharing {
+      color: #fff;
+      border-width: 0px;
+      border-style: solid;
+      border-color: transparent;
+    }
+
+    .the_champ_vertical_sharing .theChampTCBackground {
+      color: #666;
+    }
+
+    .the_champ_vertical_sharing .theChampSharing:hover {
+      border-color: transparent;
+    }
+
+    @media screen and (max-width:783px) {
+      .the_champ_vertical_sharing {
+        display: none !important
+      }
+    }
+
+    div.heateor_ss_mobile_footer {
+      display: none;
+    }
+
+    @media screen and (max-width:783px) {
+      div.the_champ_bottom_sharing {
+        width: 100% !important;
+        left: 0 !important;
+      }
+      div.the_champ_bottom_sharing li {
+        width: 10% !important;
+      }
+      div.the_champ_bottom_sharing .theChampSharing {
+        width: 100% !important;
+      }
+      div.the_champ_bottom_sharing div.theChampTotalShareCount {
+        font-size: 1em !important;
+        line-height: 28px !important
+      }
+      div.the_champ_bottom_sharing div.theChampTotalShareText {
+        font-size: .7em !important;
+        line-height: 0px !important
+      }
+      div.heateor_ss_mobile_footer {
+        display: block;
+        height: 40px;
+      }
+      .the_champ_bottom_sharing {
+        padding: 0 !important;
+        display: block !important;
+        width: auto !important;
+        bottom: -2px !important;
+        top: auto !important;
+      }
+      .the_champ_bottom_sharing .the_champ_square_count {
+        line-height: inherit;
+      }
+      .the_champ_bottom_sharing .theChampSharingArrow {
+        display: none;
+      }
+      .the_champ_bottom_sharing .theChampTCBackground {
+        margin-right: 1.1em !important
+      }
+    }
+  </style>
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel='dns-prefetch' href='//s.w.org' />
+  <link rel="alternate" type="application/rss+xml" title="FundingPress &raquo; Feed" href="https://skywarriorthemes.com/fundingpress/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="FundingPress &raquo; Comments Feed" href="https://skywarriorthemes.com/fundingpress/comments/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="FundingPress &raquo; Mollis leo semper dictum ras ut magna met Comments Feed" href="https://skywarriorthemes.com/fundingpress/rasutmagnamet/feed/" />
+  <script type="text/javascript">
+    window._wpemojiSettings = {
+      "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
+      "ext": ".png",
+      "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/",
+      "svgExt": ".svg",
+      "source": {
+        "concatemoji": "https:\/\/skywarriorthemes.com\/fundingpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.3"
+      }
+    };
+    ! function(a, b, c) {
+      function d(a, b) {
+        var c = String.fromCharCode;
+        l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0);
+        var d = k.toDataURL();
+        l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0);
+        var e = k.toDataURL();
+        return d === e
+      }
+
+      function e(a) {
+        var b;
+        if (!l || !l.fillText) return !1;
+        switch (l.textBaseline = "top", l.font = "600 32px Arial", a) {
+          case "flag":
+            return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203,
+              56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447
+            ]), !b);
+          case "emoji":
+            return b = d([55357, 56692, 8205, 9792, 65039], [55357, 56692, 8203, 9792, 65039]), !b
+        }
+        return !1
+      }
+
+      function f(a) {
+        var c = b.createElement("script");
+        c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+      }
+      var g, h, i, j, k = b.createElement("canvas"),
+        l = k.getContext && k.getContext("2d");
+      for (j = Array("flag", "emoji"), c.supports = {
+          everything: !0,
+          everythingExceptFlag: !0
+        }, i = 0; i < j.length; i++) c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]);
+      c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
+        c.DOMReady = !0
+      }, c.supports.everything || (h = function() {
+        c.readyCallback()
+      }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function() {
+        "complete" === b.readyState && c.readyCallback()
+      })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
+    }(window, document, window._wpemojiSettings);
+  </script>
+  <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 .07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+  <link rel='stylesheet' id='dashicons-css' href='https://skywarriorthemes.com/fundingpress/wp-includes/css/dashicons.min.css?ver=4.9.3' type='text/css' media='all' />
+  <link rel='stylesheet' id='admin-bar-css' href='https://skywarriorthemes.com/fundingpress/wp-includes/css/admin-bar.min.css?ver=4.9.3' type='text/css' media='all' />
+  <link rel='stylesheet' id='layerslider-css' href='https://skywarriorthemes.com/fundingpress/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css?ver=6.6.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='ls-google-fonts-css' href='https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+  <link rel='stylesheet' id='contact-form-7-css' href='https://skywarriorthemes.com/fundingpress/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9.2' type='text/css' media='all' />
+  <link rel='stylesheet' id='wsl-widget-css' href='https://skywarriorthemes.com/fundingpress/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=4.9.3' type='text/css' media='all' />
+  <link rel='stylesheet' id='mytheme-style-css' href='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/style.css?ver=20150401' type='text/css' media='all' />
+  <link rel='stylesheet' id='font-awesome-css' href='https://skywarriorthemes.com/fundingpress/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=5.3' type='text/css' media='all' />
+  <link rel='stylesheet' id='font-awesome-min-css' href='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/css/font-awesome.min.css?ver=20160930' type='text/css' media='all' />
+  <link rel='stylesheet' id='ui-totop-css' href='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/css/ui.totop.css?ver=20160930' type='text/css' media='all' />
+  <link rel='stylesheet' id='the_champ_frontend_css-css' href='https://skywarriorthemes.com/fundingpress/wp-content/plugins/super-socializer/css/front.css?ver=7.9.5' type='text/css' media='all' />
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var LS_Meta = {
+      "v": "6.6.0"
+    };
+    /* ]]> */
+  </script>
+  <script type='text/javascript' data-cfasync="false" src='https://skywarriorthemes.com/fundingpress/wp-content/plugins/LayerSlider/static/layerslider/js/greensock.js?ver=1.19.0'></script>
+  <script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+  <script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+  <script type='text/javascript' data-cfasync="false" src='https://skywarriorthemes.com/fundingpress/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.kreaturamedia.jquery.js?ver=6.6.0'></script>
+  <script type='text/javascript' data-cfasync="false" src='https://skywarriorthemes.com/fundingpress/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.transitions.js?ver=6.6.0'></script>
+  <script type='text/javascript' src='https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/js/jquery.carouFredSel-6.1.0.js?ver=4.9.3'></script>
+  <meta name="generator" content="Powered by LayerSlider 6.6.0 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress." />
+  <!-- LayerSlider updates and docs at: https://layerslider.kreaturamedia.com -->
+  <link rel='https://api.w.org/' href='https://skywarriorthemes.com/fundingpress/wp-json/' />
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://skywarriorthemes.com/fundingpress/xmlrpc.php?rsd" />
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://skywarriorthemes.com/fundingpress/wp-includes/wlwmanifest.xml" />
+  <link rel='prev' title='Disque vel augue sit amet diam lobortis posuere' href='https://skywarriorthemes.com/fundingpress/magnaeuismod/' />
+  <link rel="canonical" href="https://skywarriorthemes.com/fundingpress/rasutmagnamet/" />
+  <link rel='shortlink' href='https://skywarriorthemes.com/fundingpress/?p=2430' />
+  <link rel="alternate" type="application/json+oembed" href="https://skywarriorthemes.com/fundingpress/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fskywarriorthemes.com%2Ffundingpress%2Frasutmagnamet%2F" />
+  <link rel="alternate" type="text/xml+oembed" href="https://skywarriorthemes.com/fundingpress/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fskywarriorthemes.com%2Ffundingpress%2Frasutmagnamet%2F&#038;format=xml" />
+  <!--[if IE 9]> <script>var _gambitParallaxIE9 = true;</script> <![endif]-->
+  <link rel="stylesheet" href="https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/widgets/latest_twitter/latest_twitter_widget.css" />
+  <style type="text/css">
+    .recentcomments a {
+      display: inline !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  </style>
+  <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+  <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://skywarriorthemes.com/fundingpress/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+  <style type="text/css" media="print">
+    #wpadminbar {
+      display: none;
+    }
+  </style>
+  <style type="text/css" media="screen">
+    html {
+      margin-top: 32px !important;
+    }
+
+    * html body {
+      margin-top: 32px !important;
+    }
+
+    @media screen and ( max-width: 782px) {
+      html {
+        margin-top: 46px !important;
+      }
+      * html body {
+        margin-top: 46px !important;
+      }
+    }
+  </style>
+  <link rel="icon" href="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2017/11/cropped-logo-big-vector-32x32.jpg" sizes="32x32" />
+  <link rel="icon" href="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2017/11/cropped-logo-big-vector-192x192.jpg" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed" href="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2017/11/cropped-logo-big-vector-180x180.jpg" />
+  <meta name="msapplication-TileImage" content="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2017/11/cropped-logo-big-vector-270x270.jpg" />
+  <noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+</head>
+
+<body class="post-template-default single single-post postid-2430 single-format-standard logged-in admin-bar no-customize-support wpb-js-composer js-comp-ver-5.3 vc_responsive">
+  <div class="main_wrapper">
+
+    <!-- color styles -->
+    <link rel="stylesheet" href="https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/colorstyles/picker.css">
+    <script type="text/javascript" src="https://skywarriorthemes.com/fundingpress/wp-content/themes/fundingpress/colorstyles/demo.js"></script>
+    <script type="text/html" id="css-color">
+      .green-bg, .dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a, .tagcloud a:hover, #pager li a.active, #pager li a:hover, .menu ul > li > a:hover, .navbar-inverse .navbar-nav > li > a:after, .navbar-inverse .nav li.dropdown.open
+      > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .tabbable .nav nav-tabs li a, .bgcolor, #bgcolor, body .nav-tabs > li.active > a, body .nav-tabs > li.active > a:hover, body .nav-tabs > li.active > a:focus, body .newsbv
+      li .ncategory, .ncategory, input[type=submit], .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,a.next:hover, a.prev:hover, .pb-category, .nav-collapse ul.nav li.megamenu > ul > li > ul > li a:hover, .navbar .nav > .active > a, .navbar
+      .nav > .active > a:hover, .navbar .nav > .active > a:focus{ background-color:%color% ; } /* Border colours */ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus,
+      input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus,
+      .uneditable-input:focus, .navbar-inverse .brand:hover, .navbar-inverse .nav > li > a:hover, .menu ul > li > a:hover, .project-update-info img, body .nav-tabs > li.active > a, body .nav-tabs > li.active > a:hover, body .nav-tabs > li.active > a:focus,
+      .project-backer .cl-lg-3 img, .project-comment .cl-lg-1 img, .highlight-block .project-thumb-wrapper a, .project-gallery .gallery-image a, .tabbable .nav nav-tabs li a, .nav-tabs .active a:active, .project-gallery .gallery-image a:hover, #funding-form
+      #field-amount, .fund-tabs-cont .nav-tabs > li > a:hover, .fund-tabs-cont .nav-tabs > li.active > a, footer h3, .widget_images a img:hover, .widget h3, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus
+      { border-color: %color% !important ; /* IE6-9 */ } /* Color */ .iconcolor, .newsb-title a:hover, body a, a.login-top i, a.register-top i, a.account-top i, a.submit-top i, a.logout-top i, .category-container .project-stats li strong, .container ul.top-nav
+      li.current-menu-item a, .comment_author_name, .footer_widget > ul > li > a:hover:after, .category-container #post-content .project_collected strong, .navbartop-wrapper .container ul.top-nav li:hover, .project-thumb-wrapper h5 a:hover, #category-menu
+      li a:hover:after, #category-menu li.current a:after, .nav-tabs .active a:active, .fund-tabs-cont .nav-tabs > li > a strong, #category-menu li a:hover, #category-menu li.current a, body.user_project #wpcontent a, .author-info a, h5.bbcard_name a:hover,
+      .footer_widget > ul > li > a:after, body.user_project .breadcrumbs a, .project-card p.plocation span, .blog-list h2 a:hover, .carousel_rating, .navbartop-wrapper .container ul.top-nav li a:hover, a.next:hover, a.prev:hover, #project-rewards-list
+      span, #funding-form #field-amount, .icon span{ color: %color% ; } .button-green, .button-small, .button-medium, .nav-tabs .ui-state-active a, body .nav > li > a:hover, .nav-tabs li.active a, .nav-tabsin > .active > a, .nav-tabsin > .active > a:hover,
+      .nav-tabsin > .active > a:focus{ background-color: %color%; } .button-green:hover, .button-small:hover, .button-medium:hover, .navsin > li > a{ background-color: %bottomgrad% ; } .progress .bar{ /* Permalink - use to edit and share this gradient:
+      http://colorzilla.com/gradient-editor/#1e5799+0,82f3bd+0,7db9e8+100 */ background: %topgrad%; /* Old browsers */ background: -moz-linear-gradient(left, %bottomgrad% 0%, %color% 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(left, %bottomgrad%
+      0%, %color% 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to right, %bottomgrad% 0%, %color% 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='%bottomgrad%',
+      endColorstr='%color%',GradientType=1 ); /* IE6-9 */ } body.single-project .project-info .progress .bar{ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,82f3bd+0,7db9e8+100 */ background: %topgrad%;
+      /* Old browsers */ background: -moz-linear-gradient(bottom, %bottomgrad% 0%, %color% 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(bottom, %bottomgrad% 0%, %color% 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to top,
+      %bottomgrad% 0%, %color% 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='%bottomgrad%', endColorstr='%color%',GradientType=1 ); /* IE6-9 */ }
+    </script>
+    <script type="text/html" id="css-bck">
+      body{ background-image: url(%background%); }
+    </script>
+    <script type="text/html" id="css-pat">
+      body{ background-image: url(%pattern%); background-repeat:repeat; }
+    </script>
+
+
+    <header>
+      <div class="navbartop-wrapper">
+        <div class="container">
+          <div class="search-wrapper">
+            <ul class="social-media">
+              <a href="#myModalR" role="button" class="register-top" data-toggle="modal"><i class="fa fa-lock" aria-hidden="true"></i> Invest</a>
+              <li><a target="_blank" class="facebook" href="#">facebook</a></li>
+              <li><a target="_blank" class="twitter" href="#">twitter</a></li>
+              <li><a target="_blank" class="google" href="#">google</a></li>
+              <li><a target="_blank" class="skype" href="skype:#?add">skype</a></li>
+            </ul>
+          </div>
+          <div class="top-right">
+            <a href="#myModalR" role="button" class="register-top" data-toggle="modal"><i class="fa fa-lock" aria-hidden="true"></i> Borrow</a>
+
+
+
+            <form method="get" id="searchform" action="index.html">
+              <input type="text" class="field" name="s" id="s" placeholder="Search" />
+              <input type="hidden" name="post_type" value="project" />
+            </form>
+
+          </div>
+        </div>
+        <!-- top right -->
+      </div>
+      <!-- Container -->
+      <!-- NAVBAR
+================================================== -->
+      <div style="position:fixed;" class="navbar-wrapper navtransparent">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+          <div class="logo-wrapper">
+            <a href="index.html"> <img src="img/logo.png" alt="logo"  /> </a>
+          </div>
+          <div class="navbar navbar-inverse navbar-static-top " role="navigation">
+
+            <div class="navbar-header">
+
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="fa fa-bars"></span>
+          </button>
+              <form method="get" id="sformm" action="https://index.html">
+                <input type="search" autocomplete="off" name="s">
+                <input type="hidden" name="post_type[]" value="post" />
+                <input type="hidden" name="post_type[]" value="page" />
+                <i class="fa fa-search"></i>
+              </form>
+
+            </div>
+            <div class="navbar-collapse collapse">
+							<div class="menu-menu-1-container">
+								<ul class="nav navbar-nav">
+
+									<li id="menu-item-2574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-50 current_page_item menu-item-2574"><a href="index.html">Homepage</a></li>
+
+									<li id="menu-item-2575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2575"><a href="#">About us</a>
+										<ul class="sub-menu">
+											<li id="menu-item-4371" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4371"><a href="about.html">About</a></li>
+											<li id="menu-item-4370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4370"><a href="how.html">How it works</a></li>
+											<li id="menu-item-2948" class="menu-item menu-item-type-post_type menu-item-object-project menu-item-2948"><a href="terms.html">Terms</a></li>
+											<li id="menu-item-2588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2588"><a href="faqs.html-active">FaQs</a></li>
+										</ul>
+									</li>
+
+
+
+									<li id="menu-item-2947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2947"><a href="contact.html">Contact</a></li>
+
+									<li id="menu-item-2947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2947"><a href="#myModalL" role="button" class="login-top" data-toggle="modal">Login</a></li>
+								</ul>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!--/.nav-collapse -->
+
+
+						<div class="clear"></div>
+
+						<div class="clear"></div>
+					</div>
+
+				</div>
+				<!-- /.container -->
+			</div>
+            <!--/.nav-collapse -->
+
+
+            <div class="clear"></div>
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.navbar-wrapper -->
+
+      <div class="page-title">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="title-page">
+
+            </div>
+            <div class="breadcrumbs">
+              <a href="https://index.html"></div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+    <!-- /.header -->
+
+    <div id="myModalL" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3>Login</h3>
+          </div>
+          <div class="modal-body">
+            <div id="LoginWithAjax">
+              <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td class="avatar" id="LoginWithAjax_Avatar">
+                    <img src="" width="50" height="50" alt="" /> </td>
+                  <td>
+                    <a id="wp-logout" href="https://skywarriorthemes.com/fundingpress/wp-login.php?action=logout&#038;redirect_to=https%3A%2F%2Fskywarriorthemes.com%2Ffundingpress&#038;_wpnonce=ff97cfae4c">log out</a><br />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModalR" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3>Register For This Site</h3>
+          </div>
+          <div class="modal-body">
+            <div id="LoginWithAjax_Footer">
+              <div id="LoginWithAjax_Register" class="default">
+                <span id="LoginWithAjax_Register_Status"></span>
+
+                <form name="LoginWithAjax_Register" id="LoginWithAjax_Register_Form" action="https://skywarriorthemes.com/fundingpress/wp-login.php?action=register&callback=?&template=" method="post">
+                  <p>
+                    <label><input type="text" placeholder="Username" name="user_login" id="user_login" class="input" size="20" tabindex="10" /></label>
+                  </p>
+                  <p>
+                    <label><input type="text" placeholder="E-mail" name="user_email" id="user_email" class="input" size="25" tabindex="20" /></label>
+                  </p>
+                  <p id="reg_passmail">A password will be e-mailed to you.</p>
+                  <p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button-green button-small" value="Register" tabindex="100" /></p>
+                  <input type="hidden" name="lwa" value="1" />
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="myModalD" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h3>Delete</h3>
+            </div>
+            <div class="modal-body">
+              Are you sure you want to delete this project?<br/><br/>
+              <script>
+                jQuery(document).ready(function() {
+                  var id = 0;
+                  var prid = jQuery('.dproject');
+                  prid.on("click", function() {
+                    var myClass = jQuery(this).attr("class");
+                    myClass = myClass.replace(/\D/g, '');
+                    id = parseInt(myClass, 10);
+
+                  });
+
+                  var conf = jQuery('#conf');
+                  conf.on("click", function() {
+                    delete_project(id);
+                  });
+
+                });
+              </script>
+
+              <a id="conf" class="delete-button button-small button-red">Yes</a>
+
+              <button type="button" class="button-small button-grey" data-dismiss="modal" aria-hidden="true">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      html {
+        background-image: url(https://skywarriorthemes.com/fundingpress/wp-content/uploads/2016/08/fbg.jpg) !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+      }
+    </style>
+    <div class="blog">
+      <div class="container ">
+        <div class="row">
+
+          <div class="col-md-8 col-sm-12">
+
+            <div class="blog-post">
+              <div class="blog-post-header">
+                <div class="blog-image img_thumb entry-thumb">
+                  <a href="https://skywarriorthemes.com/fundingpress/rasutmagnamet/">                              <img class="attachment-small wp-post-image" src="img/terms.jpg" /></a>
+                  <div class="blog-pdate green-bg">
+                    <span class="date"><br />2018</span>
+                  </div>
+
+                </div>
+                <!-- blog-image -->
+
+                <div class="clear"></div>
+                <h2>Terms & Conditions</h2>
+
+              </div>
+
+
+            <p>
+              <ul>
+              <blockquote>
+            <li>  You must be above 18 years old.</li>
+<li> If you fail to fulfil your provide help request Company has all rights to block your ID</li>
+<li> If you fail to fulfil your provide help all your upline and downline IDs can be affected (Blocked)</li>
+<li> We block IDs on non-payment to ban the fake users in the system</li>
+<li> Please make sure that the money you are investing is a spare money with you. We do not gauranteed you to repay your paid amount. Because it is not necessary that when you help someone, another person will help you.</li>
+<li> We are not responsible for the mouth commitments made by any advisors or executives</li>
+<li> Plan on the website is the final plan and system works likewise only.</li>
+<li> If you have any queries or suggestions about any concern, please contact us via live chat. If we are not online there, please send us a message using contact us form. Please do not write long paragraph there. Write your problem or suggestion in less words with your contact details. We definately will contact you and try to solve your issues. Kindly have patience while we call you. We generally responds after 24 hours.</li>
+<li> If any of ID is rejected in your downline then system will deduct 200% of his commitment amount from his/her 4 DIRECT UPLINE INVESTORS (50% EACH)</li>
+<li> Referral Withdrawal will be available on odd days of the month (like 1,3,5,7....) .</li>
+<li> Level withdrawal will be available on even days of the month (like 2,4,6,8...).</li>
+<li> You can withdraw bonus on every Friday.</li>
+<li> If your ID is inactive for more than 7 days without commitment, system will make it inactive id and you will not able to withdraw your bonus income</li>
+<li> Before you withdraw principal or growth amount, you must have to make a new commitment.</li>
+<li> If your ID is prime id (KES. 1,000).</li>
+</blockquote>
+              </ul>
+              <p>Zaka has the rights to close/block a user for not adhering to our terms and conditions
+  </p>
+
+              <div class="clear"></div>
+
+
+
+
+            </div>
+            <!-- /.blog-post -->
+
+
+
+            <div class="clear"></div>
+          </div>
+          <!-- /.span8 -->
+
+
+          <div class="col-md-4 col-sm-12">
+            <div class="widget">
+              <form method="get" id="searchform" action="https://skywarriorthemes.com/fundingpress/">
+                <input type="text" class="field" name="s" id="s" placeholder="Search" />
+                <input type="hidden" name="post_type" value="post" />
+              </form>
+            </div>
+            <div class="widget">
+              <h3> Categories</h3>
+              <ul>
+
+                <li><a href="#" title="View all posts in Art">Business</a></li>
+                <li><a href="#" title="View all posts in Comics">Short-term loans</a></li>
+                <li><a href="#" title="View all posts in Film &amp; Video">Agriculture</a></li>
+                <li><a href="#" title="View all posts in Games">Education</a></li>
+                <li><a href="#" title="View all posts in Music">Capital</a></li>
+              </ul>
+            </div>
+            <div class="widget">
+              <h3> Latest Projects</h3>
+
+              <ul class="review p-widget">
+
+
+
+
+
+
+
+
+                <li>
+                  <div class="img">
+
+                    <a href="https://skywarriorthemes.com/fundingpress/project/are-you-ready-for-the-new-superhero/"><img src="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2016/09/photo-1446000318540-2fd7bb7f5804-1-57x57.jpg" /></a>
+                    <span
+                      class="overlay-link"></span>
+                  </div>
+
+                  <div class="info ">
+
+
+                    <h4 class="posttitle "><a href="# ">Invest</a></h4>
+                    <div class="post-author ">
+                      by <a href="# ">
+                               Zaka           	</a>
+                    </div>
+                    <div id="post-content ">
+
+
+                      <div class="progress progress-striped active bar-green ">
+                        <div style="width: 219% " class="bar "></div>
+                      </div>
+
+                      <ul class="project-stats ">
+                        <li class="first funded ">
+                          <strong>219%</strong>capital </li>
+                        <li class="pledged ">
+                          <strong>
+                                        Ksh1,000</strong>Registration </li>
+                        <li data-end_time="2013-02-24T08:41:18Z " class="last ksr_page_timer ">
+                          <strong>365</strong> days to go
+                        </li>
+                      </ul>
+                    </div>
+                    <!--post-content -->
+                  </div>
+                  <!-- info -->
+                  <div class="clear"></div>
+                </li>
+
+
+                <li>
+                  <div class="img">
+
+                    <a href="https://skywarriorthemes.com/fundingpress/project/beautiful-sonata/"><img src="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2016/09/sound-57x57.jpg" /></a><span class="overlay-link"></span>
+                  </div>
+
+                  <div class="info ">
+
+
+                    <h4 class="posttitle "><a href="# ">Invest</a></h4>
+                    <div class="post-author ">
+                      by <a href="# ">
+                               Zaka           	</a>
+                    </div>
+                    <div id="post-content ">
+
+
+                      <div class="progress progress-striped active bar-green ">
+                        <div style="width: 219% " class="bar "></div>
+                      </div>
+
+                      <ul class="project-stats ">
+                        <li class="first funded ">
+                          <strong>219%</strong>capital </li>
+                        <li class="pledged ">
+                          <strong>
+                                        Ksh1,000</strong>Registration </li>
+                        <li data-end_time="2013-02-24T08:41:18Z " class="last ksr_page_timer ">
+                          <strong>365</strong> days to go
+                        </li>
+                      </ul>
+                    </div>
+                    <!--post-content -->
+                  </div>
+                  <!-- info -->
+                  <div class="clear"></div>
+                </li>
+
+
+                <li>
+                  <div class="img">
+
+                    <a href="https://index.html"><img src="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2016/09/rubber-57x57.jpg" /></a><span class="overlay-link"></span>
+                  </div>
+
+                  <div class="info ">
+
+
+                    <h4 class="posttitle "><a href="# ">Invest</a></h4>
+                    <div class="post-author ">
+                      by <a href="# ">
+                               Zaka           	</a>
+                    </div>
+                    <div id="post-content ">
+
+
+                      <div class="progress progress-striped active bar-green ">
+                        <div style="width: 219% " class="bar "></div>
+                      </div>
+
+                      <ul class="project-stats ">
+                        <li class="first funded ">
+                          <strong>219%</strong>capital </li>
+                        <li class="pledged ">
+                          <strong>
+                                        Ksh1,000</strong>Registration </li>
+                        <li data-end_time="2013-02-24T08:41:18Z " class="last ksr_page_timer ">
+                          <strong>365</strong> days to go
+                        </li>
+                      </ul>
+                    </div>
+                    <!--post-content -->
+                  </div>
+                  <!-- info -->
+                  <div class="clear"></div>
+                </li>
+
+              </ul>
+
+
+            </div>
+
+          </div>
+          <!-- /.span4 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+
+  </div>
+  <!-- End of container -->
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+
+      <div class="footer_widget col-lg-4">
+        <h3>CONTACT</h3>
+        <div class="textwidget"> <a href="index.html"> <img src="img/logo.png" style="margin-top:-25px; margin-bottom:10px;" alt="logo"> </a>
+
+
+          <div style="border-bottom: 1px solid #333333;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+">
+            <div style="margin-bottom:5px;"><i style="font-size: 16px;
+    display: inline-block;
+    top: 2px;
+width:15px;
+text-align:center;
+    position: relative;
+    margin-right: 10px;" class="fa fa-map-marker" aria-hidden="true"></i> Address: Zaka International </div> 57077-00100 Nairobi <br> Kenya</div>
+
+          <div style="    font-size: 14px;
+    color: #ccc;     margin-bottom: 10px;"><i style="font-size:23px;
+width:15px;
+text-align:center;
+    display: inline-block;
+    top: 0px;
+    position: relative;
+    margin-right: 5px;" class="fa fa-mobile" aria-hidden="true"></i> Phone: +254 722-940-878</div>
+
+          <div style="    font-size: 14px;
+    color: #ccc;     margin-bottom: 10px;"><i style="font-size: 16px;
+    display: inline-block;
+    top: 2px;
+width:15px;
+text-align:center;
+    position: relative;
+    margin-right: 5px;" class="fa fa-envelope-o" aria-hidden="true"></i> Email: <a href="mailto:info@zaka.co.ke">info@zaka.co.ke</a></div>
+          <div style="    font-size: 14px;
+    color: #ccc;     margin-bottom: 10px;"><i style="font-size: 16px;
+    display: inline-block;
+    top: 2px;
+width:15px;
+text-align:center;
+    position: relative;
+    margin-right: 5px;" class="fa fa-globe" aria-hidden="true"></i> Website: <a href="https://index.html">index.html</a></div>
+        </div>
+      </div>
+      <div class="footer_widget col-lg-4">
+        <h3> Project Categories</h3>
+        <ul>
+
+          <li>
+            <a href="#" title=" View all posts in Art ">Business</a></li>
+          <li><a href="# " title="View all posts in Comics ">Education</a></li>
+          <li><a href="# " title="View all posts in Film &amp; Video ">Health</a></li>
+          <li><a href="# " title="View all posts
+              in Games ">Agriculture</a></li>
+          <li><a href="# " title="View all posts in Music ">Technology</a></li>
+          <li><a href="# " title="View all posts in Photography ">Short-term loans</a></li>
+          <li><a href="# " title="View all posts in Technology ">Capital</a></li>
+        </ul>
+      </div>
+      <div class="footer_widget col-lg-4 ">
+        <h3> Latest projects</h3>
+
+        <ul class="review p-widget ">
+
+
+          <li>
+            <div class="img ">
+
+              <a href="# "><img src="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2016/09/coffee-57x57.jpg " /></a><span class="overlay-link "></span>
+            </div>
+
+            <div class="info ">
+
+
+              <h4 class="posttitle "><a href="# ">Invest</a></h4>
+              <div class="post-author ">
+                by <a href="# ">
+                Zaka           	</a>
+              </div>
+              <div id="post-content ">
+
+
+                <div class="progress progress-striped active bar-green ">
+                  <div style="width: 219% " class="bar "></div>
+                </div>
+
+                <ul class="project-stats ">
+                  <li class="first funded ">
+                    <strong>219%</strong>capital </li>
+                  <li class="pledged ">
+                    <strong>
+                         Ksh1,000</strong>Registration </li>
+                  <li data-end_time="2013-02-24T08:41:18Z " class="last ksr_page_timer ">
+                    <strong>365</strong> days to go
+                  </li>
+                </ul>
+              </div>
+              <!--post-content -->
+            </div>
+            <!-- info -->
+            <div class="clear "></div>
+          </li>
+
+
+          <li>
+            <div class="img ">
+
+              <a href="#/ "><img src="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2016/09/UJO0jYLtRte4qpyA37Xu_9X6A7388-57x57.jpg " /></a><span class="overlay-link "></span>
+            </div>
+
+            <div class="info ">
+
+
+              <h4 class="posttitle "><a href="# ">Access</a></h4>
+              <div class="post-author ">
+                by <a href="# ">
+                Zaka            	</a>
+              </div>
+              <div id="post-content ">
+
+
+                <div class="progress progress-striped active bar-green ">
+                  <div style="width: 11% " class="bar "></div>
+                </div>
+
+                <ul class="project-stats ">
+                  <li class="first funded ">
+                    <strong>11%</strong>Capital </li>
+                  <li class="pledged ">
+                    <strong>
+                         KES7,000</strong>target </li>
+                  <li data-end_time="2013-02-24T08:41:18Z " class="last ksr_page_timer ">
+                    <strong> 365</strong> days to go </li>
+                </ul>
+              </div>
+              <!--post-content -->
+            </div>
+            <!-- info -->
+            <div class="clear "></div>
+          </li>
+
+
+          <li>
+            <div class="img ">
+
+              <a href="# "><img src="https://skywarriorthemes.com/fundingpress/wp-content/uploads/2018/01/cropped_1516703437show-all-reviews-57x57.jpg " /></a><span class="overlay-link "></span>
+            </div>
+
+            <div class="info ">
+
+
+              <h4 class="posttitle "><a href="# "></a>Growth</h4>
+              <div class="post-author ">
+                by <a href="one.html ">
+                Zaka            	</a>
+              </div>
+              <div id="post-content ">
+
+
+                <div class="progress progress-striped active bar-green ">
+                  <div style="width: 0% " class="bar "></div>
+                </div>
+
+                <ul class="project-stats ">
+                  <li class="first funded ">
